@@ -1,6 +1,6 @@
 /* ============ Grid variables ============ */
 
-$gutter: 0.75rem;
+$gutter: .5rem;
 
 //Viewport & media queries
 $grid-small: 480px;
@@ -19,8 +19,6 @@ $large-down: 'large-down';
 $large-up: 'large-up';
 $widescreen: 'widescreen';
 
-// The `$breakpoints` list is used to build our media queries.
-// You can use these in the media-query mixin.
 $breakpoints: (
   $small '(max-width: #{$grid-medium - 1})',
   $small-down '(max-width: #{$grid-small})',
@@ -34,7 +32,7 @@ $breakpoints: (
   $widescreen '(min-width: #{$grid-widescreen})'
 );
 
-/* ============ Row ============ */
+/* ============ Grid system ============ */
 
 .row {
   display: -webkit-box;
@@ -44,8 +42,6 @@ $breakpoints: (
   display: flex;
 }
 
-/* ============ Columns ============ */
-
 .column {
   display: block;
   flex-basis: 0;
@@ -54,23 +50,23 @@ $breakpoints: (
   padding: $gutter;
 }
 
-@mixin column-generator($breakpoint: '') {
-  .#{$breakpoint}one-fifth { flex: none; width: 20%; }
-  .#{$breakpoint}one-quarter { flex: none; width: 25%; }
-  .#{$breakpoint}one-third { flex: none; width: 33.333%; }
-  .#{$breakpoint}two-fifths { flex: none; width: 40%; }
+@mixin column-builder($breakpoint: '') {
   .#{$breakpoint}one-half { flex: none; width: 50%; }
-  .#{$breakpoint}three-fifths { flex: none; width: 60%; }
+  .#{$breakpoint}one-third { flex: none; width: 33.333%; }
   .#{$breakpoint}two-thirds { flex: none; width: 66.666%; }
+  .#{$breakpoint}one-quarter { flex: none; width: 25%; }
   .#{$breakpoint}three-quarters { flex: none; width: 75%; }
+  .#{$breakpoint}one-fifth { flex: none; width: 20%; }
+  .#{$breakpoint}two-fifths { flex: none; width: 40%; }
+  .#{$breakpoint}three-fifths { flex: none; width: 60%; }
   .#{$breakpoint}four-fifths { flex: none; width: 80%; }
 }
 
-@include column-generator();
+@include column-builder();
 
-/* ============ Builder ============ */
+/* ============ Builders ============ */
 
-@mixin respond-to($media-query) {
+@mixin media-query($media-query) {
   $breakpoint-found: false;
 
   @each $breakpoint in $breakpoints {
@@ -93,7 +89,7 @@ $breakpoints: (
 
 $breakpoint-has-widths: ($small, $medium-down, $medium-up);
 @each $breakpoint in $breakpoint-has-widths {
-  @include respond-to($breakpoint) {
-    @include column-generator('#{$breakpoint}--');
+  @include media-query($breakpoint) {
+    @include column-builder('#{$breakpoint}--');
   }
 }
