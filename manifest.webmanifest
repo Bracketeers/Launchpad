@@ -1,0 +1,8 @@
+{
+  "name": "matou.io | Matt Marineau",
+  "short_name": "Matou.io",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "personal website of Matthew Marineau",
+}

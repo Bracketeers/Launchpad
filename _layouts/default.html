@@ -1,0 +1,18 @@
+{% assign date_format = "%b %-d, %Y" %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body class="{{ page.title | slugify }}">
+
+    <div class="sidebar">
+      {% include sidebar.html %}
+    </div>
+
+    <div class="content">
+      {{content}}
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

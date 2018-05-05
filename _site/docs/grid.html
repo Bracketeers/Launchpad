@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Grid | GUIcci</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Grid" />
+<meta name="author" content="Matthew Marineau & Andrew Manley" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An open source CSS framework using flexbox and built with SASS" />
+<meta property="og:description" content="An open source CSS framework using flexbox and built with SASS" />
+<link rel="canonical" href="http://localhost:4000/docs/grid.html" />
+<meta property="og:url" content="http://localhost:4000/docs/grid.html" />
+<meta property="og:site_name" content="GUIcci" />
+<script type="application/ld+json">
+{"description":"An open source CSS framework using flexbox and built with SASS","author":{"@type":"Person","name":"Matthew Marineau & Andrew Manley"},"@type":"WebPage","url":"http://localhost:4000/docs/grid.html","headline":"Grid","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/images/favicon.png" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+  <body class="grid">
+
+    <div class="sidebar">
+      <a class="logo" href="/"><h1>GUIcci</h1></a>
+
+<ul>
+  <li>
+    <a href="/docs/overview"><i class="icon-file-text"></i> Overview</a> <i class="menuToggle icon-chevron-down"></i>
+    <ul class="submenu">
+      <li><a href="/docs/overview#getting-started">Getting started</a></li>
+      <li><a href="/docs/overview#customization">Customization</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="/docs/grid"><i class="icon-sidebar"></i> Grid</a> <i class="menuToggle icon-chevron-down"></i>
+    <ul class="submenu">
+      <li><a href="/docs/grid#basics">Basics</a></li>
+      <li><a href="/docs/grid#variables">Variables</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#"><i class="icon-gift"></i> Helpers</a> <i class="menuToggle icon-chevron-down"></i>
+    <ul class="submenu">
+      <li><a href="#">Item</a></li>
+      <li><a href="#">Item</a></li>
+      <li><a href="#">Item</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#"><i class="icon-box"></i> Components</a> <i class="menuToggle icon-chevron-down"></i>
+    <ul class="submenu">
+      <li><a href="#">Item</a></li>
+    </ul>
+  </li>
+  <li><a href="#"><i class="icon-code"></i> Contribute</a></li>
+</ul>
+    </div>
+
+    <div class="content">
+      <h1 id="grid">Grid</h1>
+
+<p>GUIcci uses Flexbox in order to create a super flexible grid system.</p>
+
+<h2 id="basics">Basics</h2>
+<p>Building a game is done is just two steps.</p>
+<ol>
+  <li>Create a <code class="highlighter-rouge">row</code> container</li>
+  <li>Add as many <code class="highlighter-rouge">column</code> elements as you want.
+GUIcci and the power of flexbox will handle the rest and ensure all of your columns have equal widths</li>
+</ol>
+
+<div class="example">
+  <div class="row">
+    <div class="column"><p>Auto</p></div>
+    <div class="column"><p>Auto</p></div>
+    <div class="column"><p>Auto</p></div>
+    <div class="column"><p>Auto</p></div>
+  </div>
+</div>
+
+<p>The code will look as such:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+
+    </div>
+
+    <footer role="contentinfo">
+  <script src="/js/main.js"></script>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+title: GUIcci
+author: Matthew Marineau & Andrew Manley
+email: hello@matou.io
+description: > #
+  An open source CSS framework using flexbox and built with SASS
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+  posts:
+    output: true
+    permalink: /posts/:path/
+
+plugins:
+  - jekyll-seo-tag
+
+sass:
+    sass_dir: _sass
+    style: compact
+
+# Build settings
+markdown: kramdown

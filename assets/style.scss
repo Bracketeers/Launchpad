@@ -1,0 +1,125 @@
+---
+---
+
+/* Lightr: get things done faster
+// GNU license https://github.com/matoululu/Lightr/blob/master/LICENSE
+// @author Matthew Marineau https://www.matou.io
+*/
+
+/* ============ Includes ============ */
+
+@import 'normalize';
+@import 'grid';
+@import 'helpers';
+@import 'icomoon';
+
+/* ============ General ============ */
+
+body,
+html {
+  background-color: #f4f6f8;
+  color: #454f5b;
+  font-family: 'Fira Sans',sans-serif;
+  height: 100%;
+  line-height: 30px;
+}
+
+a {
+  color: $standard;
+  transition: ease-in-out 0.15s all;
+  &:hover { color: darken($standard, 20%); }
+}
+
+h1, h2, h3, h4, h5 {
+  color: #161d25;
+}
+
+h2 { margin-top: 60px; }
+h3 { margin-top: 30px; }
+
+.container {
+  margin: 30px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+code {
+  background-color: #e4e4e4;
+  color: #ff3860;
+  padding: 0 3px;
+}
+
+pre{ max-width: 800px; }
+
+/* ============ Layout ============ */
+
+.content {
+  float: left;
+  height: 100%;
+  margin-top: 30px;
+  max-width: 1100px;
+  padding: 15px;
+  width: calc(100% - 30px);
+  @include media-query($medium-up) {
+    padding-left: 360px;
+    width: calc(100% - 390px);
+  }
+}
+
+.sidebar {
+  background-color: #fff;
+  border-right: 1px solid #dfe3e8;
+  box-sizing: border-box;
+  float: left;
+  padding: 15px;
+  width: 100%;
+  @include media-query($medium-up) {
+    height: 100%;
+    max-width: 300px;
+    padding: 30px;
+    position: fixed;
+  }
+  .logo { text-decoration: none; }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 30px;
+    li {
+      margin: 20px 0;
+      font-size: 20px;
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      i.menuToggle {
+        cursor: pointer;
+        float: right;
+      }
+    }
+  }
+
+  ul.submenu {
+    height: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: ease-in-out 0.15s all;
+    &.active { height: auto; }
+    padding-left: 20px;
+    li {
+      font-size: 16px;
+      margin: 7px 0;
+      a { color: #787878; }
+      a:hover { color: darken(#787878, 20%); }
+    }
+  }
+}
+
+.example {
+  max-width: 800px;
+  width: 100%;
+  .column p {
+    background-color: $standard;
+    color: white;
+    text-align: center;
+  }
+}
