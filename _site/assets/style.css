@@ -772,7 +772,7 @@ pre { max-width: 800px; }
 .sidebar ul { list-style: none; padding-left: 0; padding-right: 30px; }
 .sidebar ul li { margin: 20px 0; font-size: 20px; }
 .sidebar ul li a { color: #333; text-decoration: none; }
-.sidebar ul li i.menuToggle { cursor: pointer; float: right; }
+.sidebar ul li i.menuToggle { cursor: pointer; float: right; padding-top: 5px; }
 .sidebar ul.submenu { height: 0; margin-top: 10px; overflow: hidden; transition: ease-in-out 0.15s all; padding-left: 20px; }
 .sidebar ul.submenu.active { height: auto; }
 .sidebar ul.submenu li { font-size: 16px; margin: 7px 0; }
