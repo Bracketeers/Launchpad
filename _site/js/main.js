@@ -6,4 +6,14 @@ $('.icon-chevron-down').on('click', function(){
   }
 
   $(this).next('.submenu').toggleClass('active');
-})
+});
+
+
+$('.icon-menu').on('click', function(){
+  if($(this).hasClass('icon-menu')) {
+    $(this).addClass('icon-x').removeClass('icon-menu');
+  } else {
+    $(this).addClass('icon-menu').removeClass('icon-x');
+  }
+  $('body').find('.sidebar .menuContainer').toggleClass('active');
+});

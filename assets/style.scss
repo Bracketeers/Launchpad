@@ -79,9 +79,27 @@ pre{ max-width: 800px; }
     padding: 30px;
     position: fixed;
   }
+  .icon-menu,
+  .icon-x {
+    display: none;
+    padding-top: 5px;
+    @include media-query($small) {
+      color: #161d25;
+      display: block;
+      font-size: 20px;
+    }
+  }
   .logo {
     text-decoration: none;
-    img { max-width: 150px; }
+    @include flexbox();
+    img {
+      max-width: 150px;
+      @include media-query($small) {
+        display: block;
+        max-width: 80px;
+        padding-left: 20px;
+      }
+    }
   }
   ul {
     list-style: none;
@@ -125,5 +143,20 @@ pre{ max-width: 800px; }
     background-color: $standard;
     color: white;
     text-align: center;
+  }
+}
+
+.menuContainer {
+  ul.mainMenu {
+    @include media-query($small) {
+      display: none;
+    }
+  }
+  &.active {
+    ul.mainMenu {
+      @include media-query($small) {
+        display: block;
+      }
+    }
   }
 }

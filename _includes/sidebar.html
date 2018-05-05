@@ -1,27 +1,40 @@
-<a class="logo" href="{{ '/' | relative_url }}">
-  <img src="{{ 'images/logo-guicci.svg' | relative_url }}" alt="GUIcci">
-</a>
+<div class="row">
+  <div class="column one-twentieth">
+    <i class="icon-menu"></i>
+  </div>
+  <div class="column">
+    <a class="logo align-items--center" href="{{ '/' | relative_url }}">
+      <img src="{{ 'images/logo-guicci.svg' | relative_url }}" alt="GUIcci">
+    </a>
+  </div>
+</div>
 
-<ul>
-  <li>
-    <a href="{{ 'docs/overview' | relative_url }}"><i class="icon-file-text"></i> Overview</a> <i class="menuToggle icon-chevron-down"></i>
-    <ul class="submenu">
-      <li><a href="{{ 'docs/overview#getting-started' | relative_url }}">Getting started</a></li>
-      <li><a href="{{ 'docs/overview#customization' | relative_url }}">Customization</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="{{ 'docs/grid' | relative_url }}"><i class="icon-sidebar"></i> Grid</a> <i class="menuToggle icon-chevron-down"></i>
-    <ul class="submenu">
-      <li><a href="{{ 'docs/grid#basics' | relative_url }}">Basics</a></li>
-      <li><a href="{{ 'docs/grid#responsive-classes' | relative_url }}">Responsive classes</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#"><i class="icon-gift"></i> Helpers</a>
-  </li>
-  <li>
-    <a href="#"><i class="icon-box"></i> Components</a>
-  </li>
-  <li><a href="#"><i class="icon-code"></i> Contribute</a></li>
-</ul>
+
+
+<div class="menuContainer">
+
+
+  <ul class="mainMenu" >
+    <li>
+      <a href="{{ 'docs/overview' | relative_url }}"><i class="icon-file-text"></i> Overview</a> <i class="menuToggle icon-chevron-down"></i>
+      <ul class="submenu">
+        <li><a href="{{ 'docs/overview#getting-started' | relative_url }}">Getting started</a></li>
+        <li><a href="{{ 'docs/overview#customization' | relative_url }}">Customization</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="{{ 'docs/grid' | relative_url }}"><i class="icon-sidebar"></i> Grid</a> <i class="menuToggle icon-chevron-down"></i>
+      <ul class="submenu">
+        <li><a href="{{ 'docs/grid#basics' | relative_url }}">Basics</a></li>
+        <li><a href="{{ 'docs/grid#responsive-classes' | relative_url }}">Responsive classes</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="icon-gift"></i> Helpers</a>
+    </li>
+    <li>
+      <a href="#"><i class="icon-box"></i> Components</a>
+    </li>
+    <li><a href="#"><i class="icon-code"></i> Contribute</a></li>
+  </ul>
+</div>

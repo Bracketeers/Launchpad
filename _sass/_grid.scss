@@ -60,9 +60,11 @@ $breakpoints: (
   .#{$breakpoint}one-quarter { flex: none; width: 25%; }
   .#{$breakpoint}three-quarters { flex: none; width: 75%; }
   .#{$breakpoint}one-fifth { flex: none; width: 20%; }
+  .#{$breakpoint}one-fifth { flex: none; width: 20%; }
   .#{$breakpoint}two-fifths { flex: none; width: 40%; }
   .#{$breakpoint}three-fifths { flex: none; width: 60%; }
   .#{$breakpoint}four-fifths { flex: none; width: 80%; }
+  .#{$breakpoint}one-twentieth { flex: none; width: 5%; }
 }
 
 @include column-builder();

@@ -128,11 +128,15 @@ template { display: none; }
 
 .one-fifth { flex: none; width: 20%; }
 
+.one-fifth { flex: none; width: 20%; }
+
 .two-fifths { flex: none; width: 40%; }
 
 .three-fifths { flex: none; width: 60%; }
 
 .four-fifths { flex: none; width: 80%; }
+
+.one-twentieth { flex: none; width: 5%; }
 
 /* ============ Builders ============ */
 @media only screen and (max-width: 768px) { .mobile--one-half { flex: none; width: 50%; }
@@ -141,27 +145,33 @@ template { display: none; }
   .mobile--one-quarter { flex: none; width: 25%; }
   .mobile--three-quarters { flex: none; width: 75%; }
   .mobile--one-fifth { flex: none; width: 20%; }
+  .mobile--one-fifth { flex: none; width: 20%; }
   .mobile--two-fifths { flex: none; width: 40%; }
   .mobile--three-fifths { flex: none; width: 60%; }
-  .mobile--four-fifths { flex: none; width: 80%; } }
+  .mobile--four-fifths { flex: none; width: 80%; }
+  .mobile--one-twentieth { flex: none; width: 5%; } }
 @media only screen and (max-width: 1024px) { .tablet--one-half { flex: none; width: 50%; }
   .tablet--one-third { flex: none; width: 33.333%; }
   .tablet--two-thirds { flex: none; width: 66.666%; }
   .tablet--one-quarter { flex: none; width: 25%; }
   .tablet--three-quarters { flex: none; width: 75%; }
   .tablet--one-fifth { flex: none; width: 20%; }
+  .tablet--one-fifth { flex: none; width: 20%; }
   .tablet--two-fifths { flex: none; width: 40%; }
   .tablet--three-fifths { flex: none; width: 60%; }
-  .tablet--four-fifths { flex: none; width: 80%; } }
+  .tablet--four-fifths { flex: none; width: 80%; }
+  .tablet--one-twentieth { flex: none; width: 5%; } }
 @media only screen and (min-width: 769px) { .desktop--one-half { flex: none; width: 50%; }
   .desktop--one-third { flex: none; width: 33.333%; }
   .desktop--two-thirds { flex: none; width: 66.666%; }
   .desktop--one-quarter { flex: none; width: 25%; }
   .desktop--three-quarters { flex: none; width: 75%; }
   .desktop--one-fifth { flex: none; width: 20%; }
+  .desktop--one-fifth { flex: none; width: 20%; }
   .desktop--two-fifths { flex: none; width: 40%; }
   .desktop--three-fifths { flex: none; width: 60%; }
-  .desktop--four-fifths { flex: none; width: 80%; } }
+  .desktop--four-fifths { flex: none; width: 80%; }
+  .desktop--one-twentieth { flex: none; width: 5%; } }
 /* ============ Variables ============ */
 /* ============ Classes ============ */
 .float--left { float: left; }
@@ -767,8 +777,11 @@ pre { max-width: 800px; }
 
 .sidebar { background-color: #fff; border-right: 1px solid #dfe3e8; box-sizing: border-box; float: left; padding: 15px; width: 100%; }
 @media only screen and (min-width: 769px) { .sidebar { height: 100%; max-width: 300px; padding: 30px; position: fixed; } }
-.sidebar .logo { text-decoration: none; }
+.sidebar .icon-menu, .sidebar .icon-x { display: none; padding-top: 5px; }
+@media only screen and (max-width: 768px) { .sidebar .icon-menu, .sidebar .icon-x { color: #161d25; display: block; font-size: 20px; } }
+.sidebar .logo { text-decoration: none; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
 .sidebar .logo img { max-width: 150px; }
+@media only screen and (max-width: 768px) { .sidebar .logo img { display: block; max-width: 80px; padding-left: 20px; } }
 .sidebar ul { list-style: none; padding-left: 0; padding-right: 30px; }
 .sidebar ul li { margin: 20px 0; font-size: 20px; }
 .sidebar ul li a { color: #333; text-decoration: none; }
@@ -781,3 +794,6 @@ pre { max-width: 800px; }
 
 .example { max-width: 800px; width: 100%; }
 .example .column p { background-color: #00b9f1; color: white; text-align: center; }
+
+@media only screen and (max-width: 768px) { .menuContainer ul.mainMenu { display: none; } }
+@media only screen and (max-width: 768px) { .menuContainer.active ul.mainMenu { display: block; } }
