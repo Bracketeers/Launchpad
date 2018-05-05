@@ -79,7 +79,10 @@ pre{ max-width: 800px; }
     padding: 30px;
     position: fixed;
   }
-  .logo { text-decoration: none; }
+  .logo {
+    text-decoration: none;
+    img { max-width: 150px; }
+  }
   ul {
     list-style: none;
     padding-left: 0;

@@ -768,6 +768,7 @@ pre { max-width: 800px; }
 .sidebar { background-color: #fff; border-right: 1px solid #dfe3e8; box-sizing: border-box; float: left; padding: 15px; width: 100%; }
 @media only screen and (min-width: 769px) { .sidebar { height: 100%; max-width: 300px; padding: 30px; position: fixed; } }
 .sidebar .logo { text-decoration: none; }
+.sidebar .logo img { max-width: 150px; }
 .sidebar ul { list-style: none; padding-left: 0; padding-right: 30px; }
 .sidebar ul li { margin: 20px 0; font-size: 20px; }
 .sidebar ul li a { color: #333; text-decoration: none; }
