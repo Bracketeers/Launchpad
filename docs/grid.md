@@ -5,13 +5,13 @@ layout: default
 
 # Grid
 
-GUIcci uses Flexbox in order to create a super flexible grid system.
+Launchpad uses Flexbox in order to create a super flexible grid system.
 
 ## Basics
 Building a grid is done in just two steps.
 1. Create a `row` container
 2. Add as many `column` elements as you want.
-GUIcci and the power of flexbox will handle the rest and ensure all of your columns have equal widths
+Launchpad and the power of flexbox will handle the rest and ensure all of your columns have equal widths
 
 <div class="example">
   <div class="row">
@@ -37,6 +37,6 @@ The code will look as such:
 
 ## Responsive classes
 
-In some scenarios you will want more than just equal-width columns. GUIcci allows you to specify certain column widths as well as control on what devices these widths change.
+In some scenarios you will want more than just equal-width columns. Launchpad allows you to specify certain column widths as well as control on what devices these widths change.
 
 TODO

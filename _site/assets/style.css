@@ -772,6 +772,8 @@ code { background-color: #e4e4e4; color: #ff3860; padding: 0 3px; }
 pre { max-width: 800px; }
 
 /* ============ Layout ============ */
+@media only screen and (min-width: 769px) { .one-twentieth { display: none; } }
+
 .content { float: left; height: 100%; margin-top: 30px; max-width: 1100px; padding: 15px; width: calc(100% - 30px); }
 @media only screen and (min-width: 769px) { .content { padding-left: 360px; width: calc(100% - 390px); } }
 
@@ -780,15 +782,15 @@ pre { max-width: 800px; }
 .sidebar .icon-menu, .sidebar .icon-x { display: none; padding-top: 5px; }
 @media only screen and (max-width: 768px) { .sidebar .icon-menu, .sidebar .icon-x { color: #161d25; display: block; font-size: 20px; } }
 .sidebar .logo { text-decoration: none; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
-.sidebar .logo img { max-width: 150px; }
+.sidebar .logo img { max-width: 90%; }
 @media only screen and (max-width: 768px) { .sidebar .logo img { display: block; max-width: 80px; padding-left: 20px; } }
 .sidebar ul { list-style: none; padding-left: 0; padding-right: 30px; }
-.sidebar ul li { margin: 20px 0; font-size: 20px; }
+.sidebar ul li { padding: 20px 0 0; font-size: 20px; }
 .sidebar ul li a { color: #333; text-decoration: none; }
 .sidebar ul li i.menuToggle { cursor: pointer; float: right; padding-top: 5px; }
-.sidebar ul.submenu { height: 0; margin-top: 10px; overflow: hidden; transition: ease-in-out 0.15s all; padding-left: 20px; }
-.sidebar ul.submenu.active { height: auto; }
-.sidebar ul.submenu li { font-size: 16px; margin: 7px 0; }
+.sidebar ul.submenu { display: none; padding-top: 10px; padding-left: 20px; }
+.sidebar ul.submenu.active { display: block; }
+.sidebar ul.submenu li { font-size: 16px; margin: 7px 0; padding: 0px; }
 .sidebar ul.submenu li a { color: #787878; }
 .sidebar ul.submenu li a:hover { color: #454545; }
 

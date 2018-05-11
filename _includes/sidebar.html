@@ -4,7 +4,7 @@
   </div>
   <div class="column">
     <a class="logo align-items--center" href="{{ '/' | relative_url }}">
-      <img src="{{ 'images/logo-guicci.svg' | relative_url }}" alt="GUIcci">
+      <img src="{{ 'images/logo.svg' | relative_url }}" alt="Launchpad">
     </a>
   </div>
 </div>
@@ -17,7 +17,7 @@
   <ul class="mainMenu" >
     <li>
       <a href="{{ 'docs/overview' | relative_url }}"><i class="icon-file-text"></i> Overview</a> <i class="menuToggle icon-chevron-down"></i>
-      <ul class="submenu">
+      <ul class="submenu" {% if site.url == page.url %}style="display: block"{% endif %}>
         <li><a href="{{ 'docs/overview#getting-started' | relative_url }}">Getting started</a></li>
         <li><a href="{{ 'docs/overview#customization' | relative_url }}">Customization</a></li>
       </ul>

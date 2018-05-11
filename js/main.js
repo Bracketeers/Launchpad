@@ -5,7 +5,7 @@ $('.icon-chevron-down').on('click', function(){
     $(this).addClass('icon-chevron-down').removeClass('icon-chevron-up');
   }
 
-  $(this).next('.submenu').toggleClass('active');
+  $(this).next('.submenu').slideToggle();
 });
 
 

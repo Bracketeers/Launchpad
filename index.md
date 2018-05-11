@@ -1,6 +1,6 @@
 ---
 layout: home
 id: index
-title: Welcome
+title: Launchpad
 subtitle: Front end developer and avid <a href="/projects">creator of things</a>
 ---
