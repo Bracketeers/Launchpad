@@ -23,7 +23,7 @@ You can get started using Launchpad using a couple different ways.
 3. Use the CDN (coming soon)
 
 ### 1. Download
-You can find all of our releases here <https://github.com/Bracketeers/Launchpad/releases>
+You can find all of our releases here <a href="https://github.com/Bracketeers/Launchpad/releases" target="_blank">https://github.com/Bracketeers/Launchpad/releases</a>
 
 ### 2. NPM
 Coming soon
@@ -33,3 +33,4 @@ Coming soon
 
 ## Customization
 Out of the box Launchpad will provide you with some default settings and colors. Understandably, you may need to change some of these values to fit your needs. Luckily all of this can be done by modifying the `variables.scss` file.
+
