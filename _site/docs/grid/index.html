@@ -11,15 +11,15 @@
 <meta property="og:title" content="Grid" />
 <meta name="author" content="Bracketeers" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Grid Launchpad uses Flexbox in order to create a super flexible grid system. Basics Building a grid is done in just two steps. Create a row container Add as many column elements as you want. Launchpad and the power of flexbox will handle the rest and ensure all of your columns have equal widths Auto Auto Auto Auto The code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Responsive classes In some scenarios you will want more than just equal-width columns. Launchpad allows you to specify certain column widths as well as control on what devices these widths change. TODO" />
-<meta property="og:description" content="Grid Launchpad uses Flexbox in order to create a super flexible grid system. Basics Building a grid is done in just two steps. Create a row container Add as many column elements as you want. Launchpad and the power of flexbox will handle the rest and ensure all of your columns have equal widths Auto Auto Auto Auto The code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Responsive classes In some scenarios you will want more than just equal-width columns. Launchpad allows you to specify certain column widths as well as control on what devices these widths change. TODO" />
+<meta name="description" content="Grid Basics Responsive classes Device classes Basics Launchpad uses Flexbox in order to create a super flexible grid system. Building a grid is done in just two steps. Create a row container Add as many column elements as you want. Launchpad and the power of flexbox will handle the rest and ensure all of your columns have equal widths Auto Auto Auto Auto The code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Responsive classes In some scenarios you will want more than just equal-width columns. Launchpad allows you to specify certain column widths as well as control on what devices these widths change. Basic modifiers You can modify a column with a responsive class adding one of the following class modifiers: one-whole (100% width) one-half (50% width) one-third (33% width) two-thirds (66% width) one-quarter (25% width) two-quarters (50% width) three-quarters (75% width) one-fifth (20% width) two-fifths (40% width) three-fifths (60% width) four-fifths (80% width) Here is a small example of how you can use basic responsive classes one-whole one-half Auto Auto one-third two-thirds one-quarter two-quarters Auto three-quarters Auto Auto one-fifth two-fifths the code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-whole&quot;&gt;&lt;p&gt;one-whole&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-half&quot;&gt;&lt;p&gt;one-half&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-third&quot;&gt;&lt;p&gt;one-third&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-thirds&quot;&gt;&lt;p&gt;two-thirds&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-quarter&quot;&gt;&lt;p&gt;one-quarter&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-quarters&quot;&gt;&lt;p&gt;two-quarters&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column three-quarters&quot;&gt;&lt;p&gt;three-quarters&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-fifth&quot;&gt;&lt;p&gt;one-fifth&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-fifths&quot;&gt;&lt;p&gt;two-fifths&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Device classes Beyond responsive classes you may also want to change column sizes based off of the device you are using. Launchpad provides 3 device classes that can used to control your column sizes. Mobile mobile (767px and lower) mobile-down (480px and lower) mobile-up (481px and higher) Tablet tablet (768px to 1024px) tablet-down (768px and lower) tablet-up (769px and higher) Desktop desktop-up (1025px and higher) desktop-down (1024px and lower) Here is a small example of how you can utilize device classes. You will want to resize your browser to see the changes. mobile--one-wholetablet--one-halfauto mobile--one-wholetablet--one-halfauto mobile--one-wholetablet--one-wholeauto the code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-half&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-half&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-half&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-half&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-whole&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-whole&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;" />
+<meta property="og:description" content="Grid Basics Responsive classes Device classes Basics Launchpad uses Flexbox in order to create a super flexible grid system. Building a grid is done in just two steps. Create a row container Add as many column elements as you want. Launchpad and the power of flexbox will handle the rest and ensure all of your columns have equal widths Auto Auto Auto Auto The code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Responsive classes In some scenarios you will want more than just equal-width columns. Launchpad allows you to specify certain column widths as well as control on what devices these widths change. Basic modifiers You can modify a column with a responsive class adding one of the following class modifiers: one-whole (100% width) one-half (50% width) one-third (33% width) two-thirds (66% width) one-quarter (25% width) two-quarters (50% width) three-quarters (75% width) one-fifth (20% width) two-fifths (40% width) three-fifths (60% width) four-fifths (80% width) Here is a small example of how you can use basic responsive classes one-whole one-half Auto Auto one-third two-thirds one-quarter two-quarters Auto three-quarters Auto Auto one-fifth two-fifths the code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-whole&quot;&gt;&lt;p&gt;one-whole&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-half&quot;&gt;&lt;p&gt;one-half&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-third&quot;&gt;&lt;p&gt;one-third&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-thirds&quot;&gt;&lt;p&gt;two-thirds&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-quarter&quot;&gt;&lt;p&gt;one-quarter&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-quarters&quot;&gt;&lt;p&gt;two-quarters&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column three-quarters&quot;&gt;&lt;p&gt;three-quarters&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-fifth&quot;&gt;&lt;p&gt;one-fifth&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-fifths&quot;&gt;&lt;p&gt;two-fifths&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Device classes Beyond responsive classes you may also want to change column sizes based off of the device you are using. Launchpad provides 3 device classes that can used to control your column sizes. Mobile mobile (767px and lower) mobile-down (480px and lower) mobile-up (481px and higher) Tablet tablet (768px to 1024px) tablet-down (768px and lower) tablet-up (769px and higher) Desktop desktop-up (1025px and higher) desktop-down (1024px and lower) Here is a small example of how you can utilize device classes. You will want to resize your browser to see the changes. mobile--one-wholetablet--one-halfauto mobile--one-wholetablet--one-halfauto mobile--one-wholetablet--one-wholeauto the code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-half&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-half&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-half&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-half&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-whole&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-whole&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;" />
 <link rel="canonical" href="http://localhost:4000/docs/grid/" />
 <meta property="og:url" content="http://localhost:4000/docs/grid/" />
 <meta property="og:site_name" content="Launchpad" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-05-11T16:30:44-04:00" />
+<meta property="article:published_time" content="2018-05-11T19:37:34-04:00" />
 <script type="application/ld+json">
-{"description":"Grid Launchpad uses Flexbox in order to create a super flexible grid system. Basics Building a grid is done in just two steps. Create a row container Add as many column elements as you want. Launchpad and the power of flexbox will handle the rest and ensure all of your columns have equal widths Auto Auto Auto Auto The code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;Auto&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Responsive classes In some scenarios you will want more than just equal-width columns. Launchpad allows you to specify certain column widths as well as control on what devices these widths change. TODO","author":{"@type":"Person","name":"Bracketeers"},"@type":"BlogPosting","url":"http://localhost:4000/docs/grid/","headline":"Grid","dateModified":"2018-05-11T16:30:44-04:00","datePublished":"2018-05-11T16:30:44-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/docs/grid/"},"@context":"http://schema.org"}</script>
+{"description":"Grid Basics Responsive classes Device classes Basics Launchpad uses Flexbox in order to create a super flexible grid system. Building a grid is done in just two steps. Create a row container Add as many column elements as you want. Launchpad and the power of flexbox will handle the rest and ensure all of your columns have equal widths Auto Auto Auto Auto The code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Responsive classes In some scenarios you will want more than just equal-width columns. Launchpad allows you to specify certain column widths as well as control on what devices these widths change. Basic modifiers You can modify a column with a responsive class adding one of the following class modifiers: one-whole (100% width) one-half (50% width) one-third (33% width) two-thirds (66% width) one-quarter (25% width) two-quarters (50% width) three-quarters (75% width) one-fifth (20% width) two-fifths (40% width) three-fifths (60% width) four-fifths (80% width) Here is a small example of how you can use basic responsive classes one-whole one-half Auto Auto one-third two-thirds one-quarter two-quarters Auto three-quarters Auto Auto one-fifth two-fifths the code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-whole&quot;&gt;&lt;p&gt;one-whole&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-half&quot;&gt;&lt;p&gt;one-half&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-third&quot;&gt;&lt;p&gt;one-third&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-thirds&quot;&gt;&lt;p&gt;two-thirds&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-quarter&quot;&gt;&lt;p&gt;one-quarter&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-quarters&quot;&gt;&lt;p&gt;two-quarters&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column three-quarters&quot;&gt;&lt;p&gt;three-quarters&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column one-fifth&quot;&gt;&lt;p&gt;one-fifth&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column two-fifths&quot;&gt;&lt;p&gt;two-fifths&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;column&quot;&gt;&lt;p&gt;Auto&lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Device classes Beyond responsive classes you may also want to change column sizes based off of the device you are using. Launchpad provides 3 device classes that can used to control your column sizes. Mobile mobile (767px and lower) mobile-down (480px and lower) mobile-up (481px and higher) Tablet tablet (768px to 1024px) tablet-down (768px and lower) tablet-up (769px and higher) Desktop desktop-up (1025px and higher) desktop-down (1024px and lower) Here is a small example of how you can utilize device classes. You will want to resize your browser to see the changes. mobile--one-wholetablet--one-halfauto mobile--one-wholetablet--one-halfauto mobile--one-wholetablet--one-wholeauto the code will look as such: &lt;div class=&quot;example&quot;&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-half&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-half&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-half&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-half&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;column mobile--one-whole tablet--one-whole&quot;&gt; &lt;p&gt;mobile--one-whole&lt;br&gt;tablet--one-whole&lt;br&gt;auto&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;","author":{"@type":"Person","name":"Bracketeers"},"@type":"BlogPosting","url":"http://localhost:4000/docs/grid/","headline":"Grid","dateModified":"2018-05-11T19:37:34-04:00","datePublished":"2018-05-11T19:37:34-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/docs/grid/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link href="/images/favicon.png" rel="shortcut icon">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700" rel="stylesheet">
@@ -29,10 +29,11 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </head>
-  <body class="grid">
+  <body class="grid docs">
 
     <div class="sidebar">
       
+
 
 <div class="row align-items--center justify-content--center">
   <div class="column one-twentieth">
@@ -52,11 +53,12 @@
 
   <ul class="mainMenu" >
     
+      
       <li>
         <a href="/docs/overview/"><i class="icon-file-text"></i> Overview</a>
         
           <i class="menuToggle icon-chevron-down"></i>
-          <ul class="submenu">
+          <ul class="submenu /docs/grid/ Overview" >
             
               
               <li><a href="/docs/overview#getting-started">Getting started</a></li>
@@ -67,11 +69,12 @@
           </ul>
         
     
+      
       <li>
         <a href="/docs/grid/"><i class="icon-sidebar"></i> Grid</a>
         
-          <i class="menuToggle icon-chevron-down"></i>
-          <ul class="submenu">
+          <i class="menuToggle icon-chevron-up"></i>
+          <ul class="submenu /docs/grid/ Grid" style="display: block">
             
               
               <li><a href="/docs/grid#basics">Basics</a></li>
@@ -79,17 +82,21 @@
               
               <li><a href="/docs/grid#responsive-classes">Responsive classes</a></li>
             
+              
+              <li><a href="/docs/grid#device-classes">Device classes</a></li>
+            
           </ul>
         
     
+      
       <li>
         <a href="/docs/helpers/"><i class="icon-gift"></i> Helpers</a>
         
           <i class="menuToggle icon-chevron-down"></i>
-          <ul class="submenu">
+          <ul class="submenu /docs/grid/ Helpers" >
             
               
-              <li><a href="/docs/helpers#how-to">How to</a></li>
+              <li><a href="/docs/helpers#basics">Basics</a></li>
             
               
               <li><a href="/docs/helpers#text">Text</a></li>
@@ -109,11 +116,12 @@
           </ul>
         
     
+      
       <li>
         <a href="/docs/components/"><i class="icon-box"></i> Components</a>
         
           <i class="menuToggle icon-chevron-down"></i>
-          <ul class="submenu">
+          <ul class="submenu /docs/grid/ Components" >
             
               
               <li><a href="/docs/components#buttons">Buttons</a></li>
@@ -136,9 +144,22 @@
     <div class="content">
       <h1 id="grid">Grid</h1>
 
-<p>Launchpad uses Flexbox in order to create a super flexible grid system.</p>
+<ol>
+  
+    
+    <li><a href="/docs/grid#basics">Basics</a></li>
+  
+    
+    <li><a href="/docs/grid#responsive-classes">Responsive classes</a></li>
+  
+    
+    <li><a href="/docs/grid#device-classes">Device classes</a></li>
+  
+</ol>
 
 <h2 id="basics">Basics</h2>
+<p>Launchpad uses Flexbox in order to create a super flexible grid system.</p>
+
 <p>Building a grid is done in just two steps.</p>
 <ol>
   <li>Create a <code class="highlighter-rouge">row</code> container</li>
@@ -159,10 +180,10 @@ Launchpad and the power of flexbox will handle the rest and ensure all of your c
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
@@ -171,7 +192,148 @@ Launchpad and the power of flexbox will handle the rest and ensure all of your c
 
 <p>In some scenarios you will want more than just equal-width columns. Launchpad allows you to specify certain column widths as well as control on what devices these widths change.</p>
 
-<p>TODO</p>
+<h3 id="basic-modifiers">Basic modifiers</h3>
+
+<p>You can modify a column with a responsive class adding one of the following class modifiers:</p>
+<ul>
+  <li>one-whole (100% width)</li>
+  <li>one-half (50% width)</li>
+  <li>one-third (33% width)</li>
+  <li>two-thirds (66% width)</li>
+  <li>one-quarter (25% width)</li>
+  <li>two-quarters (50% width)</li>
+  <li>three-quarters (75% width)</li>
+  <li>one-fifth (20% width)</li>
+  <li>two-fifths (40% width)</li>
+  <li>three-fifths (60% width)</li>
+  <li>four-fifths (80% width)</li>
+</ul>
+
+<p>Here is a small example of how you can use basic responsive classes</p>
+
+<div class="example">
+  <div class="row">
+    <div class="column one-whole"><p>one-whole</p></div>
+  </div>
+  <div class="row">
+    <div class="column one-half"><p>one-half</p></div>
+    <div class="column"><p>Auto</p></div>
+    <div class="column"><p>Auto</p></div>
+  </div>
+  <div class="row">
+    <div class="column one-third"><p>one-third</p></div>
+    <div class="column two-thirds"><p>two-thirds</p></div>
+  </div>
+  <div class="row">
+    <div class="column one-quarter"><p>one-quarter</p></div>
+    <div class="column two-quarters"><p>two-quarters</p></div>
+    <div class="column"><p>Auto</p></div>
+  </div>
+  <div class="row">
+    <div class="column three-quarters"><p>three-quarters</p></div>
+    <div class="column"><p>Auto</p></div>
+    <div class="column"><p>Auto</p></div>
+  </div>
+  <div class="row">
+    <div class="column one-fifth"><p>one-fifth</p></div>
+    <div class="column four-fifths"><p>two-fifths</p></div>
+  </div>
+</div>
+
+<p>the code will look as such:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column one-whole"</span><span class="nt">&gt;&lt;p&gt;</span>one-whole<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column one-half"</span><span class="nt">&gt;&lt;p&gt;</span>one-half<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column one-third"</span><span class="nt">&gt;&lt;p&gt;</span>one-third<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column two-thirds"</span><span class="nt">&gt;&lt;p&gt;</span>two-thirds<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column one-quarter"</span><span class="nt">&gt;&lt;p&gt;</span>one-quarter<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column two-quarters"</span><span class="nt">&gt;&lt;p&gt;</span>two-quarters<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column three-quarters"</span><span class="nt">&gt;&lt;p&gt;</span>three-quarters<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column one-fifth"</span><span class="nt">&gt;&lt;p&gt;</span>one-fifth<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column two-fifths"</span><span class="nt">&gt;&lt;p&gt;</span>two-fifths<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;&lt;p&gt;</span>Auto<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="device-classes">Device classes</h2>
+
+<p>Beyond responsive classes you may also want to change column sizes based off of the device you are using. Launchpad provides 3 device classes that can used to control your column sizes.</p>
+
+<ol>
+  <li>Mobile
+    <ul>
+      <li>mobile (767px and lower)</li>
+      <li>mobile-down (480px and lower)</li>
+      <li>mobile-up (481px and higher)</li>
+    </ul>
+  </li>
+  <li>Tablet
+    <ul>
+      <li>tablet (768px to 1024px)</li>
+      <li>tablet-down (768px and lower)</li>
+      <li>tablet-up (769px and higher)</li>
+    </ul>
+  </li>
+  <li>Desktop
+    <ul>
+      <li>desktop-up (1025px and higher)</li>
+      <li>desktop-down (1024px and lower)</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Here is a small example of how you can utilize device classes. You will want to resize your browser to see the changes.</p>
+
+<div class="example">
+  <div class="row">
+    <div class="column mobile--one-whole tablet--one-half">
+      <p>mobile--one-whole<br />tablet--one-half<br />auto</p>
+    </div>
+    <div class="column mobile--one-whole tablet--one-half">
+      <p>mobile--one-whole<br />tablet--one-half<br />auto</p>
+    </div>
+    <div class="column mobile--one-whole tablet--one-whole">
+      <p>mobile--one-whole<br />tablet--one-whole<br />auto</p>
+    </div>
+  </div>
+</div>
+
+<p>the code will look as such:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column mobile--one-whole tablet--one-half"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>mobile--one-whole<span class="nt">&lt;br&gt;</span>tablet--one-half<span class="nt">&lt;br&gt;</span>auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column mobile--one-whole tablet--one-half"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>mobile--one-whole<span class="nt">&lt;br&gt;</span>tablet--one-half<span class="nt">&lt;br&gt;</span>auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column mobile--one-whole tablet--one-whole"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>mobile--one-whole<span class="nt">&lt;br&gt;</span>tablet--one-whole<span class="nt">&lt;br&gt;</span>auto<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p><br /></p>
+
 
     </div>
 

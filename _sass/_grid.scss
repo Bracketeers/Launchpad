@@ -11,20 +11,20 @@ $grid-desktop: 1024px;
 $mobile: 'mobile';
 $mobile-down: 'small-down';
 $mobile-up: 'small-up';
-$tablet: 'medium';
+$tablet: 'tablet';
 $tablet-down: 'tablet';
 $tablet-up: 'desktop';
 $desktop-down: 'large-down';
 $desktop-up: 'large-up';
 
 $breakpoints: (
-  $mobile '(max-width: #{$grid-tablet})',
+  $mobile '(max-width: #{$grid-tablet - 1})',
   $mobile-down '(max-width: #{$grid-mobile})',
-  $mobile-up '(min-width: #{$grid-mobile})',
+  $mobile-up '(min-width: #{$grid-mobile + 1})',
   $tablet '(min-width: #{$grid-tablet}) and (max-width: #{$grid-desktop})',
   $tablet-down '(max-width: #{$grid-tablet})',
-  $tablet-up '(min-width: #{$grid-tablet})',
-  $desktop-up '(min-width: #{$grid-desktop})',
+  $tablet-up '(min-width: #{$grid-tablet + 1})',
+  $desktop-up '(min-width: #{$grid-desktop + 1})',
   $desktop-down '(max-width: #{$grid-desktop})',
 );
 
@@ -53,14 +53,14 @@ $breakpoints: (
   .#{$breakpoint}one-whole { flex: none; width: calc(100% - #{$gutter}* 2); }
   .#{$breakpoint}one-half { flex: none; width: calc(50% - #{$gutter}* 2); }
   .#{$breakpoint}one-third { flex: none; width: calc(33.333% - #{$gutter}* 2); }
-  .#{$breakpoint}two-thirds { flex: none; width: calc(66.666% #{$gutter}* 2); }
-  .#{$breakpoint}one-quarter { flex: none; width: calc(25% #{$gutter}* 2); }
-  .#{$breakpoint}three-quarters { flex: none; width: calc(75% #{$gutter}* 2); }
-  .#{$breakpoint}one-fifth { flex: none; width: calc(20% #{$gutter}* 2); }
-  .#{$breakpoint}one-fifth { flex: none; width: calc(20% #{$gutter}* 2); }
-  .#{$breakpoint}two-fifths { flex: none; width: calc(40% #{$gutter}* 2); }
-  .#{$breakpoint}three-fifths { flex: none; width: calc(60% #{$gutter}* 2); }
-  .#{$breakpoint}four-fifths { flex: none; width: calc(80% #{$gutter}* 2); }
+  .#{$breakpoint}two-thirds { flex: none; width: calc(66.666% - #{$gutter}* 2); }
+  .#{$breakpoint}one-quarter { flex: none; width: calc(25% - #{$gutter}* 2); }
+  .#{$breakpoint}two-quarters { flex: none; width: calc(50% - #{$gutter}* 2); }
+  .#{$breakpoint}three-quarters { flex: none; width: calc(75% - #{$gutter}* 2); }
+  .#{$breakpoint}one-fifth { flex: none; width: calc(20% - #{$gutter}* 2); }
+  .#{$breakpoint}two-fifths { flex: none; width: calc(40% - #{$gutter}* 2); }
+  .#{$breakpoint}three-fifths { flex: none; width: calc(60% - #{$gutter}* 2); }
+  .#{$breakpoint}four-fifths { flex: none; width: calc(80% - #{$gutter}* 2); }
   .#{$breakpoint}one-twentieth { flex: none; width: 5%; }
 }
 
@@ -89,7 +89,7 @@ $breakpoints: (
   }
 }
 
-$breakpoint-has-widths: ($mobile, $tablet-down, $tablet-up);
+$breakpoint-has-widths: ($desktop-up, $desktop-down, $tablet-up, $tablet-down, $tablet, $mobile-up, $mobile-down, $mobile);
 @each $breakpoint in $breakpoint-has-widths {
   @include media-query($breakpoint) {
     @include column-builder('#{$breakpoint}--');

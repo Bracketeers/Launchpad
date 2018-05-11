@@ -1,0 +1,6 @@
+<ol>
+  {% for anchor in page.anchors %}
+    {% assign link = anchor | slugify | prepend: '#' %}
+    <li><a href="{{ page.direct_link | append: link | relative_url }}">{{ anchor }}</a></li>
+  {% endfor %}
+</ol>

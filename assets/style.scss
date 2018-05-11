@@ -9,6 +9,7 @@
 /* ============ Includes ============ */
 
 @import 'normalize';
+@import 'variables';
 @import 'grid';
 @import 'helpers';
 @import 'icomoon';
@@ -35,8 +36,6 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 { margin-top: 0; }
-h2 { margin-top: 60px; }
-h3 { margin-top: 30px; }
 
 .container {
   margin: 30px;
@@ -47,6 +46,8 @@ h3 { margin-top: 30px; }
 code {
   background-color: #e4e4e4;
   color: #ff3860;
+  max-height: 350px;
+  overflow-y: scroll;
   padding: 0 3px;
 }
 
@@ -78,7 +79,7 @@ pre{ max-width: 800px; }
   border-right: 1px solid #dfe3e8;
   box-sizing: border-box;
   float: left;
-  padding: 15px;
+  padding: 5px 15px;
   width: 100%;
   @include media-query($tablet-up) {
     height: 100%;
@@ -89,7 +90,6 @@ pre{ max-width: 800px; }
   .icon-menu,
   .icon-x {
     display: none;
-    padding-top: 5px;
     @include media-query($mobile) {
       color: #161d25;
       display: block;
@@ -104,7 +104,7 @@ pre{ max-width: 800px; }
       max-width: 90%;
       @include media-query($mobile) {
         display: block;
-        max-width: 120px;
+        max-width: 200px;
       }
     }
   }
@@ -151,6 +151,7 @@ pre{ max-width: 800px; }
     background-color: $standard;
     color: white;
     text-align: center;
+    margin: 0;
   }
 }
 
@@ -160,12 +161,13 @@ pre{ max-width: 800px; }
       display: none;
     }
   }
-  &.active {
-    ul.mainMenu {
-      @include media-query($mobile) {
-        display: block;
-      }
-    }
+}
+
+.docs {
+  h2 {
+    border-top: 1px solid #dfdfdf;
+    margin-top: 20px;
+    padding-top: 20px;
   }
 }
 

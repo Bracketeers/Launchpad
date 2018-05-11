@@ -1,4 +1,4 @@
-$('.icon-chevron-down').on('click', function(){
+$('.menuToggle').on('click', function(){
   if($(this).hasClass('icon-chevron-down')) {
     $(this).addClass('icon-chevron-up').removeClass('icon-chevron-down');
   } else {
@@ -15,5 +15,5 @@ $('.icon-menu').on('click', function(){
   } else {
     $(this).addClass('icon-menu').removeClass('icon-x');
   }
-  $('body').find('.sidebar .menuContainer').toggleClass('active');
+  $('body').find('.sidebar .menuContainer .mainMenu').slideToggle();
 });

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
-  <body class="{{ page.title | slugify }}">
+  <body class="{{ page.title | slugify }} {{ page.additional_template }}">
 
     <div class="sidebar">
       {% include sidebar.html %}

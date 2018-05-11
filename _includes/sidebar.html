@@ -1,5 +1,6 @@
 {% assign sorted = site.docs | sort: 'position' %}
 
+
 <div class="row align-items--center justify-content--center">
   <div class="column one-twentieth">
     <i class="icon-menu"></i>
@@ -18,11 +19,12 @@
 
   <ul class="mainMenu" >
     {% for doc in sorted %}
+      {% assign slugTitle = doc.title | slugify %}
       <li>
         <a href="{{ doc.url | relative_url }}"><i class="{{ doc.icon }}"></i> {{ doc.title }}</a>
         {% if doc.anchors != null %}
-          <i class="menuToggle icon-chevron-down"></i>
-          <ul class="submenu">
+          <i class="menuToggle {% if page.url contains slugTitle %}icon-chevron-up{% else %}icon-chevron-down{% endif %}"></i>
+          <ul class="submenu {{ page.url }} {{ doc.title }}" {% if page.url contains slugTitle %}style="display: block"{% endif %}>
             {% for anchor in doc.anchors %}
               {% assign link = anchor | slugify | prepend: '#' %}
               <li><a href="{{ doc.direct_link | append: link | relative_url }}">{{ anchor }}</a></li>

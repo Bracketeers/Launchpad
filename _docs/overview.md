@@ -1,4 +1,5 @@
 ---
+additional_template: docs
 position: 1
 title: Overview
 layout: default
@@ -11,6 +12,8 @@ anchors:
 ---
 
 # Overview
+
+{% include glossary.html %}
 
 Launchpad's main goal is to help developers build websites faster. By creating simple to understand grids and extra-handy helpers we hope to provide developers the tools they need to increase their productivity.
 
@@ -33,4 +36,6 @@ Coming soon
 
 ## Customization
 Out of the box Launchpad will provide you with some default settings and colors. Understandably, you may need to change some of these values to fit your needs. Luckily all of this can be done by modifying the `variables.scss` file.
+
+TODO
 

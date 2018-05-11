@@ -1,4 +1,5 @@
 ---
+additional_template: docs
 position: 4
 title: Components
 layout: default
@@ -12,5 +13,7 @@ anchors:
 ---
 
 # Components
+
+{% include glossary.html %}
 
 Sorry! Nothing here yet...
