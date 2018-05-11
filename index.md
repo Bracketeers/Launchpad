@@ -18,7 +18,11 @@ subtitle: Front end developer and avid <a href="/projects">creator of things</a>
           <p>{{ doc.details }}</p>
           {% for anchor in doc.anchors %}
             {% assign link = anchor | slugify | prepend: '#' %}
-            <span><a href="{{ doc.direct_link | append: link | relative_url }}"><i class='icon-hash'></i> {{ anchor }}</a></span>
+            <span>
+              <a href="{{ doc.direct_link | append: link | relative_url }}">
+                <i class='icon-hash'></i>{{ anchor }}
+              </a>
+            </span>
           {% endfor %}
         </div>
       </div>

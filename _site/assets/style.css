@@ -812,7 +812,7 @@ pre { max-width: 800px; }
 .category a { color: #fff; text-decoration: none; }
 .category a:hover { opacity: 0.5; }
 .category h2 { color: white; margin: 10px 0; }
-.category span { background-color: rgba(255, 255, 255, 0.3); border-radius: 5px; margin: 3px; padding: 3px 6px; }
+.category span { background-color: rgba(255, 255, 255, 0.3); border-radius: 5px; margin: 3px; padding: 3px 6px; white-space: nowrap; }
 
 .column--overview { background-color: #00b9f1; }
 
