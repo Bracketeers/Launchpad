@@ -54,7 +54,7 @@ pre{ max-width: 800px; }
 /* ============ Layout ============ */
 
 .one-twentieth {
-  @include media-query($medium-up) {
+  @include media-query($tablet-up) {
     display: none;
   }
 }
@@ -66,7 +66,7 @@ pre{ max-width: 800px; }
   max-width: 1100px;
   padding: 15px;
   width: calc(100% - 30px);
-  @include media-query($medium-up) {
+  @include media-query($tablet-up) {
     padding-left: 360px;
     width: calc(100% - 390px);
   }
@@ -79,7 +79,7 @@ pre{ max-width: 800px; }
   float: left;
   padding: 15px;
   width: 100%;
-  @include media-query($medium-up) {
+  @include media-query($tablet-up) {
     height: 100%;
     max-width: 300px;
     padding: 30px;
@@ -89,7 +89,7 @@ pre{ max-width: 800px; }
   .icon-x {
     display: none;
     padding-top: 5px;
-    @include media-query($small) {
+    @include media-query($mobile) {
       color: #161d25;
       display: block;
       font-size: 20px;
@@ -101,7 +101,7 @@ pre{ max-width: 800px; }
     text-decoration: none;
     img {
       max-width: 90%;
-      @include media-query($small) {
+      @include media-query($mobile) {
         display: block;
         max-width: 120px;
       }
@@ -111,7 +111,7 @@ pre{ max-width: 800px; }
     list-style: none;
     padding-left: 0;
     padding-right: 30px;
-    @include media-query($small) {
+    @include media-query($mobile) {
       padding-right: 0;
     }
     li {
@@ -155,13 +155,13 @@ pre{ max-width: 800px; }
 
 .menuContainer {
   ul.mainMenu {
-    @include media-query($small) {
+    @include media-query($mobile) {
       display: none;
     }
   }
   &.active {
     ul.mainMenu {
-      @include media-query($small) {
+      @include media-query($mobile) {
         display: block;
       }
     }

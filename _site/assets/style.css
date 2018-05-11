@@ -153,7 +153,7 @@ template { display: none; }
   .mobile--three-fifths { flex: none; width: calc(60% 0.5rem* 2); }
   .mobile--four-fifths { flex: none; width: calc(80% 0.5rem* 2); }
   .mobile--one-twentieth { flex: none; width: 5%; } }
-@media only screen and (max-width: 1024px) { .tablet--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
+@media only screen and (max-width: 768px) { .tablet--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
   .tablet--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
   .tablet--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
   .tablet--two-thirds { flex: none; width: calc(66.666% 0.5rem* 2); }
@@ -165,7 +165,7 @@ template { display: none; }
   .tablet--three-fifths { flex: none; width: calc(60% 0.5rem* 2); }
   .tablet--four-fifths { flex: none; width: calc(80% 0.5rem* 2); }
   .tablet--one-twentieth { flex: none; width: 5%; } }
-@media only screen and (min-width: 769px) { .desktop--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
+@media only screen and (min-width: 768px) { .desktop--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
   .desktop--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
   .desktop--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
   .desktop--two-thirds { flex: none; width: calc(66.666% 0.5rem* 2); }
@@ -777,13 +777,13 @@ code { background-color: #e4e4e4; color: #ff3860; padding: 0 3px; }
 pre { max-width: 800px; }
 
 /* ============ Layout ============ */
-@media only screen and (min-width: 769px) { .one-twentieth { display: none; } }
+@media only screen and (min-width: 768px) { .one-twentieth { display: none; } }
 
 .content { float: left; height: 100%; margin-top: 30px; max-width: 1100px; padding: 15px; width: calc(100% - 30px); }
-@media only screen and (min-width: 769px) { .content { padding-left: 360px; width: calc(100% - 390px); } }
+@media only screen and (min-width: 768px) { .content { padding-left: 360px; width: calc(100% - 390px); } }
 
 .sidebar { background-color: #fff; border-right: 1px solid #dfe3e8; box-sizing: border-box; float: left; padding: 15px; width: 100%; }
-@media only screen and (min-width: 769px) { .sidebar { height: 100%; max-width: 300px; padding: 30px; position: fixed; } }
+@media only screen and (min-width: 768px) { .sidebar { height: 100%; max-width: 300px; padding: 30px; position: fixed; } }
 .sidebar .icon-menu, .sidebar .icon-x { display: none; padding-top: 5px; }
 @media only screen and (max-width: 768px) { .sidebar .icon-menu, .sidebar .icon-x { color: #161d25; display: block; font-size: 20px; } }
 .sidebar .logo-column { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }

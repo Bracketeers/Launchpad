@@ -3,33 +3,29 @@
 $gutter: .5rem;
 
 //Viewport & media queries
-$grid-small: 480px;
-$grid-medium: 769px;
-$grid-large: 1025px;
-$grid-widescreen: 1400px;
+$grid-mobile: 480px;
+$grid-tablet: 768px;
+$grid-desktop: 1024px;
 
-$small: 'mobile';
-$small-down: 'small-down';
-$small-up: 'small-up';
-$medium: 'medium';
-$medium-down: 'tablet';
-$medium-up: 'desktop';
-$large: 'large';
-$large-down: 'large-down';
-$large-up: 'large-up';
-$widescreen: 'widescreen';
+
+$mobile: 'mobile';
+$mobile-down: 'small-down';
+$mobile-up: 'small-up';
+$tablet: 'medium';
+$tablet-down: 'tablet';
+$tablet-up: 'desktop';
+$desktop-down: 'large-down';
+$desktop-up: 'large-up';
 
 $breakpoints: (
-  $small '(max-width: #{$grid-medium - 1})',
-  $small-down '(max-width: #{$grid-small})',
-  $small-up '(min-width: #{$grid-small + 1})',
-  $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
-  $medium-down '(max-width: #{$grid-large - 1})',
-  $medium-up '(min-width: #{$grid-medium})',
-  $large '(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})',
-  $large-down '(max-width: #{$grid-widescreen - 1})',
-  $large-up '(min-width: #{$grid-large})',
-  $widescreen '(min-width: #{$grid-widescreen})'
+  $mobile '(max-width: #{$grid-tablet})',
+  $mobile-down '(max-width: #{$grid-mobile})',
+  $mobile-up '(min-width: #{$grid-mobile})',
+  $tablet '(min-width: #{$grid-tablet}) and (max-width: #{$grid-desktop})',
+  $tablet-down '(max-width: #{$grid-tablet})',
+  $tablet-up '(min-width: #{$grid-tablet})',
+  $desktop-up '(min-width: #{$grid-desktop})',
+  $desktop-down '(max-width: #{$grid-desktop})',
 );
 
 /* ============ Grid system ============ */
@@ -93,7 +89,7 @@ $breakpoints: (
   }
 }
 
-$breakpoint-has-widths: ($small, $medium-down, $medium-up);
+$breakpoint-has-widths: ($mobile, $tablet-down, $tablet-up);
 @each $breakpoint in $breakpoint-has-widths {
   @include media-query($breakpoint) {
     @include column-builder('#{$breakpoint}--');
