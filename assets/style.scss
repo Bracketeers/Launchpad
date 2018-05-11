@@ -95,15 +95,15 @@ pre{ max-width: 800px; }
       font-size: 20px;
     }
   }
+  .logo-column { @include flexbox(); }
   .logo {
+    display: inline-block;
     text-decoration: none;
-    @include flexbox();
     img {
       max-width: 90%;
       @include media-query($small) {
         display: block;
-        max-width: 80px;
-        padding-left: 20px;
+        max-width: 120px;
       }
     }
   }
@@ -111,6 +111,9 @@ pre{ max-width: 800px; }
     list-style: none;
     padding-left: 0;
     padding-right: 30px;
+    @include media-query($small) {
+      padding-right: 0;
+    }
     li {
       padding: 20px 0 0;
       font-size: 20px;
@@ -121,7 +124,6 @@ pre{ max-width: 800px; }
       i.menuToggle {
         cursor: pointer;
         float: right;
-        padding-top: 5px;
       }
     }
   }

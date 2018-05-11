@@ -781,13 +781,15 @@ pre { max-width: 800px; }
 @media only screen and (min-width: 769px) { .sidebar { height: 100%; max-width: 300px; padding: 30px; position: fixed; } }
 .sidebar .icon-menu, .sidebar .icon-x { display: none; padding-top: 5px; }
 @media only screen and (max-width: 768px) { .sidebar .icon-menu, .sidebar .icon-x { color: #161d25; display: block; font-size: 20px; } }
-.sidebar .logo { text-decoration: none; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+.sidebar .logo-column { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+.sidebar .logo { display: inline-block; text-decoration: none; }
 .sidebar .logo img { max-width: 90%; }
-@media only screen and (max-width: 768px) { .sidebar .logo img { display: block; max-width: 80px; padding-left: 20px; } }
+@media only screen and (max-width: 768px) { .sidebar .logo img { display: block; max-width: 120px; } }
 .sidebar ul { list-style: none; padding-left: 0; padding-right: 30px; }
+@media only screen and (max-width: 768px) { .sidebar ul { padding-right: 0; } }
 .sidebar ul li { padding: 20px 0 0; font-size: 20px; }
 .sidebar ul li a { color: #333; text-decoration: none; }
-.sidebar ul li i.menuToggle { cursor: pointer; float: right; padding-top: 5px; }
+.sidebar ul li i.menuToggle { cursor: pointer; float: right; }
 .sidebar ul.submenu { display: none; padding-top: 10px; padding-left: 20px; }
 .sidebar ul.submenu.active { display: block; }
 .sidebar ul.submenu li { font-size: 16px; margin: 7px 0; padding: 0px; }
