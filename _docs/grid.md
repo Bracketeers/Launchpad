@@ -1,6 +1,7 @@
 ---
 title: Grid
 layout: default
+details: Learn how to grid system works.
 ---
 
 # Grid

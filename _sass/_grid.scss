@@ -40,7 +40,7 @@ $breakpoints: (
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  margin-bottom: -$gutter;
+  flex-wrap: wrap;
   margin-left: -$gutter;
   margin-right: -$gutter;
 }
@@ -54,16 +54,16 @@ $breakpoints: (
 }
 
 @mixin column-builder($breakpoint: '') {
-  .#{$breakpoint}one-half { flex: none; width: 50%; }
-  .#{$breakpoint}one-third { flex: none; width: 33.333%; }
-  .#{$breakpoint}two-thirds { flex: none; width: 66.666%; }
-  .#{$breakpoint}one-quarter { flex: none; width: 25%; }
-  .#{$breakpoint}three-quarters { flex: none; width: 75%; }
-  .#{$breakpoint}one-fifth { flex: none; width: 20%; }
-  .#{$breakpoint}one-fifth { flex: none; width: 20%; }
-  .#{$breakpoint}two-fifths { flex: none; width: 40%; }
-  .#{$breakpoint}three-fifths { flex: none; width: 60%; }
-  .#{$breakpoint}four-fifths { flex: none; width: 80%; }
+  .#{$breakpoint}one-half { flex: none; width: calc(50% - #{$gutter}* 2); }
+  .#{$breakpoint}one-third { flex: none; width: calc(33.333% - #{$gutter}* 2); }
+  .#{$breakpoint}two-thirds { flex: none; width: calc(66.666% #{$gutter}* 2); }
+  .#{$breakpoint}one-quarter { flex: none; width: calc(25% #{$gutter}* 2); }
+  .#{$breakpoint}three-quarters { flex: none; width: calc(75% #{$gutter}* 2); }
+  .#{$breakpoint}one-fifth { flex: none; width: calc(20% #{$gutter}* 2); }
+  .#{$breakpoint}one-fifth { flex: none; width: calc(20% #{$gutter}* 2); }
+  .#{$breakpoint}two-fifths { flex: none; width: calc(40% #{$gutter}* 2); }
+  .#{$breakpoint}three-fifths { flex: none; width: calc(60% #{$gutter}* 2); }
+  .#{$breakpoint}four-fifths { flex: none; width: calc(80% #{$gutter}* 2); }
   .#{$breakpoint}one-twentieth { flex: none; width: 5%; }
 }
 

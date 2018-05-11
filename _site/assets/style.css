@@ -112,65 +112,65 @@ template { display: none; }
 
 /* ============ Grid variables ============ */
 /* ============ Grid system ============ */
-.row { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; margin-bottom: -0.5rem; margin-left: -0.5rem; margin-right: -0.5rem; }
+.row { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; margin-left: -0.5rem; margin-right: -0.5rem; }
 
 .column { display: block; flex-basis: 0; flex-grow: 1; flex-shrink: 1; padding: 0.5rem; }
 
-.one-half { flex: none; width: 50%; }
+.one-half { flex: none; width: calc(50% - 0.5rem* 2); }
 
-.one-third { flex: none; width: 33.333%; }
+.one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
 
-.two-thirds { flex: none; width: 66.666%; }
+.two-thirds { flex: none; width: calc(66.666% 0.5rem* 2); }
 
-.one-quarter { flex: none; width: 25%; }
+.one-quarter { flex: none; width: calc(25% 0.5rem* 2); }
 
-.three-quarters { flex: none; width: 75%; }
+.three-quarters { flex: none; width: calc(75% 0.5rem* 2); }
 
-.one-fifth { flex: none; width: 20%; }
+.one-fifth { flex: none; width: calc(20% 0.5rem* 2); }
 
-.one-fifth { flex: none; width: 20%; }
+.one-fifth { flex: none; width: calc(20% 0.5rem* 2); }
 
-.two-fifths { flex: none; width: 40%; }
+.two-fifths { flex: none; width: calc(40% 0.5rem* 2); }
 
-.three-fifths { flex: none; width: 60%; }
+.three-fifths { flex: none; width: calc(60% 0.5rem* 2); }
 
-.four-fifths { flex: none; width: 80%; }
+.four-fifths { flex: none; width: calc(80% 0.5rem* 2); }
 
 .one-twentieth { flex: none; width: 5%; }
 
 /* ============ Builders ============ */
-@media only screen and (max-width: 768px) { .mobile--one-half { flex: none; width: 50%; }
-  .mobile--one-third { flex: none; width: 33.333%; }
-  .mobile--two-thirds { flex: none; width: 66.666%; }
-  .mobile--one-quarter { flex: none; width: 25%; }
-  .mobile--three-quarters { flex: none; width: 75%; }
-  .mobile--one-fifth { flex: none; width: 20%; }
-  .mobile--one-fifth { flex: none; width: 20%; }
-  .mobile--two-fifths { flex: none; width: 40%; }
-  .mobile--three-fifths { flex: none; width: 60%; }
-  .mobile--four-fifths { flex: none; width: 80%; }
+@media only screen and (max-width: 768px) { .mobile--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
+  .mobile--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
+  .mobile--two-thirds { flex: none; width: calc(66.666% 0.5rem* 2); }
+  .mobile--one-quarter { flex: none; width: calc(25% 0.5rem* 2); }
+  .mobile--three-quarters { flex: none; width: calc(75% 0.5rem* 2); }
+  .mobile--one-fifth { flex: none; width: calc(20% 0.5rem* 2); }
+  .mobile--one-fifth { flex: none; width: calc(20% 0.5rem* 2); }
+  .mobile--two-fifths { flex: none; width: calc(40% 0.5rem* 2); }
+  .mobile--three-fifths { flex: none; width: calc(60% 0.5rem* 2); }
+  .mobile--four-fifths { flex: none; width: calc(80% 0.5rem* 2); }
   .mobile--one-twentieth { flex: none; width: 5%; } }
-@media only screen and (max-width: 1024px) { .tablet--one-half { flex: none; width: 50%; }
-  .tablet--one-third { flex: none; width: 33.333%; }
-  .tablet--two-thirds { flex: none; width: 66.666%; }
-  .tablet--one-quarter { flex: none; width: 25%; }
-  .tablet--three-quarters { flex: none; width: 75%; }
-  .tablet--one-fifth { flex: none; width: 20%; }
-  .tablet--one-fifth { flex: none; width: 20%; }
-  .tablet--two-fifths { flex: none; width: 40%; }
-  .tablet--three-fifths { flex: none; width: 60%; }
-  .tablet--four-fifths { flex: none; width: 80%; }
+@media only screen and (max-width: 1024px) { .tablet--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
+  .tablet--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
+  .tablet--two-thirds { flex: none; width: calc(66.666% 0.5rem* 2); }
+  .tablet--one-quarter { flex: none; width: calc(25% 0.5rem* 2); }
+  .tablet--three-quarters { flex: none; width: calc(75% 0.5rem* 2); }
+  .tablet--one-fifth { flex: none; width: calc(20% 0.5rem* 2); }
+  .tablet--one-fifth { flex: none; width: calc(20% 0.5rem* 2); }
+  .tablet--two-fifths { flex: none; width: calc(40% 0.5rem* 2); }
+  .tablet--three-fifths { flex: none; width: calc(60% 0.5rem* 2); }
+  .tablet--four-fifths { flex: none; width: calc(80% 0.5rem* 2); }
   .tablet--one-twentieth { flex: none; width: 5%; } }
-@media only screen and (min-width: 769px) { .desktop--one-half { flex: none; width: 50%; }
-  .desktop--one-third { flex: none; width: 33.333%; }
-  .desktop--two-thirds { flex: none; width: 66.666%; }
-  .desktop--one-quarter { flex: none; width: 25%; }
-  .desktop--three-quarters { flex: none; width: 75%; }
-  .desktop--one-fifth { flex: none; width: 20%; }
-  .desktop--one-fifth { flex: none; width: 20%; }
-  .desktop--two-fifths { flex: none; width: 40%; }
-  .desktop--three-fifths { flex: none; width: 60%; }
-  .desktop--four-fifths { flex: none; width: 80%; }
+@media only screen and (min-width: 769px) { .desktop--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
+  .desktop--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
+  .desktop--two-thirds { flex: none; width: calc(66.666% 0.5rem* 2); }
+  .desktop--one-quarter { flex: none; width: calc(25% 0.5rem* 2); }
+  .desktop--three-quarters { flex: none; width: calc(75% 0.5rem* 2); }
+  .desktop--one-fifth { flex: none; width: calc(20% 0.5rem* 2); }
+  .desktop--one-fifth { flex: none; width: calc(20% 0.5rem* 2); }
+  .desktop--two-fifths { flex: none; width: calc(40% 0.5rem* 2); }
+  .desktop--three-fifths { flex: none; width: calc(60% 0.5rem* 2); }
+  .desktop--four-fifths { flex: none; width: calc(80% 0.5rem* 2); }
   .desktop--one-twentieth { flex: none; width: 5%; } }
 /* ============ Variables ============ */
 /* ============ Classes ============ */
@@ -801,3 +801,15 @@ pre { max-width: 800px; }
 
 @media only screen and (max-width: 768px) { .menuContainer ul.mainMenu { display: none; } }
 @media only screen and (max-width: 768px) { .menuContainer.active ul.mainMenu { display: block; } }
+
+/* ============ Index ============ */
+.category { color: white; padding: 10px; }
+.category h2 { color: white; margin: 10px 0; }
+
+.column--overview { background-color: #00b9f1; }
+
+.column--grid { background-color: #75D701; }
+
+.column--helpers { background-color: #f9320c; }
+
+.column--components { background-color: #f9c00c; }

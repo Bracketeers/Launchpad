@@ -167,3 +167,18 @@ pre{ max-width: 800px; }
     }
   }
 }
+
+/* ============ Index ============ */
+
+.category {
+  color: white;
+  padding: 10px;
+  h2 {
+    color: white;
+    margin: 10px 0;
+  }
+}
+.column--overview { background-color: $standard; }
+.column--grid { background-color: $positive; }
+.column--helpers { background-color: $negative; }
+.column--components { background-color: $warning; }
