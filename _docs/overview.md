@@ -1,7 +1,10 @@
 ---
+position: 1
 title: Overview
 layout: default
 details: Find out the basics of Launchpad and how to install it.
+direct_link: docs/overview
+icon: icon-file-text
 anchors:
   - Getting started
   - Customization

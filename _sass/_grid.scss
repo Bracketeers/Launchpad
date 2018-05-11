@@ -54,6 +54,7 @@ $breakpoints: (
 }
 
 @mixin column-builder($breakpoint: '') {
+  .#{$breakpoint}one-whole { flex: none; width: calc(100% - #{$gutter}* 2); }
   .#{$breakpoint}one-half { flex: none; width: calc(50% - #{$gutter}* 2); }
   .#{$breakpoint}one-third { flex: none; width: calc(33.333% - #{$gutter}* 2); }
   .#{$breakpoint}two-thirds { flex: none; width: calc(66.666% #{$gutter}* 2); }

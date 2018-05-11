@@ -1,7 +1,13 @@
 ---
+position: 2
 title: Grid
 layout: default
 details: Learn how to grid system works.
+direct_link: docs/grid
+icon: icon-sidebar
+anchors:
+  - Basics
+  - Responsive classes
 ---
 
 # Grid

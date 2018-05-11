@@ -1,3 +1,5 @@
+{% assign sorted = site.docs | sort: 'position' %}
+
 <div class="row align-items--center justify-content--center">
   <div class="column one-twentieth">
     <i class="icon-menu"></i>
@@ -12,32 +14,23 @@
   </div>
 </div>
 
-
-
 <div class="menuContainer">
 
-
   <ul class="mainMenu" >
-    <li>
-      <a href="{{ 'docs/overview' | relative_url }}"><i class="icon-file-text"></i> Overview</a> <i class="menuToggle icon-chevron-down"></i>
-      <ul class="submenu" {% if site.url == page.url %}style="display: block"{% endif %}>
-        <li><a href="{{ 'docs/overview#getting-started' | relative_url }}">Getting started</a></li>
-        <li><a href="{{ 'docs/overview#customization' | relative_url }}">Customization</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="{{ 'docs/grid' | relative_url }}"><i class="icon-sidebar"></i> Grid</a> <i class="menuToggle icon-chevron-down"></i>
-      <ul class="submenu">
-        <li><a href="{{ 'docs/grid#basics' | relative_url }}">Basics</a></li>
-        <li><a href="{{ 'docs/grid#responsive-classes' | relative_url }}">Responsive classes</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#"><i class="icon-gift"></i> Helpers</a>
-    </li>
-    <li>
-      <a href="#"><i class="icon-box"></i> Components</a>
-    </li>
+    {% for doc in sorted %}
+      <li>
+        <a href="{{ doc.url | relative_url }}"><i class="{{ doc.icon }}"></i> {{ doc.title }}</a>
+        {% if doc.anchors != null %}
+          <i class="menuToggle icon-chevron-down"></i>
+          <ul class="submenu">
+            {% for anchor in doc.anchors %}
+              {% assign link = anchor | slugify | prepend: '#' %}
+              <li><a href="{{ doc.direct_link | append: link | relative_url }}">{{ anchor }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+    {% endfor %}
+
     <li><a href="#"><i class="icon-code"></i> Contribute</a></li>
   </ul>
 </div>
