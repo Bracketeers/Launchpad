@@ -1,7 +1,4 @@
 # Launchpad
-An open source framework for faster building
-
-## Overview
 
 Welcome to Launchpad we're happy you came to check us out! Launchpad's main goal is to help developers build websites faster. By creating simple to understand grids and extra-handy helpers we hope to provide developers the tools they need to increase their productivity.
 
