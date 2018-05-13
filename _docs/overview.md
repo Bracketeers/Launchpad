@@ -21,15 +21,15 @@ Launchpad's main goal is to help developers build websites faster. By creating s
 
 You can get started using Launchpad using a couple different ways.
 
-1. Download the files from our repository
-2. Use NPM (coming soon)
+1. Use NPM
+2. Download the files from our repository
 3. Use the CDN (coming soon)
 
-### 1. Download
-You can find all of our releases here <a href="https://github.com/Bracketeers/Launchpad/releases" target="_blank">https://github.com/Bracketeers/Launchpad/releases</a>
+### 1. NPM
+<code class="npm">npm i @bracketeers/launchpad</code>
 
-### 2. NPM
-Coming soon
+### 2. Download
+You can find all of our releases here <a href="https://github.com/Bracketeers/Launchpad/releases" target="_blank">https://github.com/Bracketeers/Launchpad/releases</a>
 
 ### 3. CDN
 Coming soon

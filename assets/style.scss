@@ -12,15 +12,17 @@
 @import 'variables';
 @import 'grid';
 @import 'helpers';
+@import 'components';
 @import 'icomoon';
 
 /* ============ General ============ */
 
 body,
 html {
+  -webkit-font-smoothing: antialiased;
   background-color: #f4f6f8;
   color: #454f5b;
-  font-family: 'Fira Sans',sans-serif;
+  font-family: 'Rubik',sans-serif;
   height: 100%;
   line-height: 30px;
 }
@@ -35,7 +37,13 @@ h1, h2, h3, h4, h5 {
   color: #161d25;
 }
 
-h1 { margin-top: 0; }
+h1 {
+  line-height: 1.5em;
+  margin-top: 0;
+  &.statement {
+    font-weight: 400;
+  }
+}
 
 .container {
   margin: 30px;
@@ -45,13 +53,20 @@ h1 { margin-top: 0; }
 
 code {
   background-color: #e4e4e4;
+  border-radius: 5px;
   color: #ff3860;
   max-height: 350px;
   overflow-y: scroll;
   padding: 0 3px;
+  &.npm {
+    //font-size: 24px;
+    padding: 10px 20px;
+  }
 }
 
-pre{ max-width: 800px; }
+pre{
+  max-width: 800px;
+}
 
 /* ============ Layout ============ */
 
@@ -149,6 +164,7 @@ pre{ max-width: 800px; }
   width: 100%;
   .column p {
     background-color: $standard;
+    border-radius: 5px;
     color: white;
     text-align: center;
     margin: 0;
@@ -173,8 +189,22 @@ pre{ max-width: 800px; }
 
 /* ============ Index ============ */
 
+.quick-start {
+  margin: 40px 0;
+  padding: 20px 0;
+  code {
+    overflow-y: initial;
+    margin-right: 15px;
+  }
+  .btn {
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+}
+
 .category {
   @include flexbox();
+  border-radius: 7px;
   color: white;
   min-height: 200px;
   padding: 10px;
@@ -201,3 +231,11 @@ pre{ max-width: 800px; }
 .column--grid { background-color: $positive; }
 .column--helpers { background-color: $negative; }
 .column--components { background-color: $warning; }
+
+/* ============ Highlighting ============ */
+
+.hljs {
+  color: #005cc5;
+  .nt { color: #22863a; }
+  .na { color: #6f42c1; }
+}

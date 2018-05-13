@@ -7,7 +7,11 @@ subtitle: Front end developer and avid <a href="/projects">creator of things</a>
 
 {% assign sorted = site.docs | sort: 'position' %}
 
-<h1>Welcome to Launchpad!</h1>
+<h1 class="statement"><strong>Launchpad</strong> is a flexbox based framework<br>aimed to increase your productivity.</h1>
+
+<div class="quick-start">
+  <code class="npm">npm i @bracketeers/launchpad</code>
+</div>
 
 <div class="row">
   {% for doc in sorted %}
@@ -29,3 +33,5 @@ subtitle: Front end developer and avid <a href="/projects">creator of things</a>
     </div>
   {% endfor %}
 </div>
+
+

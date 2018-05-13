@@ -303,6 +303,8 @@ template { display: none; }
 .horizontal-list li { display: inline-block; padding-right: 0.5rem; }
 
 /* ============ Includes ============ */
+.btn { background-color: #00b9f1; color: white; padding: 10px 20px; text-decoration: none; }
+
 @font-face { font-family: 'icomoon'; src: url("fonts/icomoon.eot?kaeovx"); src: url("fonts/icomoon.eot?kaeovx#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?kaeovx") format("truetype"), url("fonts/icomoon.woff?kaeovx") format("woff"), url("fonts/icomoon.svg?kaeovx#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 [class^="icon-"], [class*=" icon-"] { /* use !important to prevent issues with browser extensions that change fonts */ font-family: 'icomoon' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -843,18 +845,20 @@ template { display: none; }
 .icon-github:before { content: "\eab0"; }
 
 /* ============ General ============ */
-body, html { background-color: #f4f6f8; color: #454f5b; font-family: 'Fira Sans',sans-serif; height: 100%; line-height: 30px; }
+body, html { -webkit-font-smoothing: antialiased; background-color: #f4f6f8; color: #454f5b; font-family: 'Rubik',sans-serif; height: 100%; line-height: 30px; }
 
 a { color: #00b9f1; transition: ease-in-out 0.15s all; }
 a:hover { color: #006b8b; }
 
 h1, h2, h3, h4, h5 { color: #161d25; }
 
-h1 { margin-top: 0; }
+h1 { line-height: 1.5em; margin-top: 0; }
+h1.statement { font-weight: 400; }
 
 .container { margin: 30px; max-width: 1100px; width: 100%; }
 
-code { background-color: #e4e4e4; color: #ff3860; max-height: 350px; overflow-y: scroll; padding: 0 3px; }
+code { background-color: #e4e4e4; border-radius: 5px; color: #ff3860; max-height: 350px; overflow-y: scroll; padding: 0 3px; }
+code.npm { padding: 10px 20px; }
 
 pre { max-width: 800px; }
 
@@ -884,14 +888,18 @@ pre { max-width: 800px; }
 .sidebar ul.submenu li a:hover { color: #454545; }
 
 .example { max-width: 800px; width: 100%; }
-.example .column p { background-color: #00b9f1; color: white; text-align: center; margin: 0; }
+.example .column p { background-color: #00b9f1; border-radius: 5px; color: white; text-align: center; margin: 0; }
 
 @media only screen and (max-width: 767px) { .menuContainer ul.mainMenu { display: none; } }
 
 .docs h2 { border-top: 1px solid #dfdfdf; margin-top: 20px; padding-top: 20px; }
 
 /* ============ Index ============ */
-.category { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; color: white; min-height: 200px; padding: 10px; }
+.quick-start { margin: 40px 0; padding: 20px 0; }
+.quick-start code { overflow-y: initial; margin-right: 15px; }
+.quick-start .btn { border-radius: 5px; margin-left: 15px; }
+
+.category { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; border-radius: 7px; color: white; min-height: 200px; padding: 10px; }
 .category a { color: #fff; text-decoration: none; }
 .category a:hover { opacity: 0.5; }
 .category h2 { color: white; margin: 10px 0; }
@@ -904,3 +912,8 @@ pre { max-width: 800px; }
 .column--helpers { background-color: #f9320c; }
 
 .column--components { background-color: #f9c00c; }
+
+/* ============ Highlighting ============ */
+.hljs { color: #005cc5; }
+.hljs .nt { color: #22863a; }
+.hljs .na { color: #6f42c1; }
