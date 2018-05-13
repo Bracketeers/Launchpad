@@ -18,7 +18,16 @@ You can get started using Launchpad using a couple different ways.
 You can find all of our releases here <https://github.com/Bracketeers/Launchpad/releases>
 
 ### 2. NPM
-Coming soon
+```
+npm install --save-dev @bracketeers/launchpad
+```
 
 ### 3. CDN
-Coming soon
+Commented Version
+```
+https://unpkg.com/@bracketeers/launchpad/release/launchpad.css
+```
+Minified Version
+```
+https://unpkg.com/@bracketeers/launchpad/release/launchpad.min.css
+```
