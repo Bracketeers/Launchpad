@@ -22,20 +22,24 @@ Launchpad's main goal is to help developers build websites faster. By creating s
 You can get started using Launchpad using a couple different ways.
 
 1. Use NPM
-2. Download the files from our repository
-3. Use the CDN (coming soon)
+2. Use the CDN
+3. Download the files from our repository
 
 ### 1. NPM
 <code class="npm">npm i @bracketeers/launchpad</code>
 
-### 2. Download
-You can find all of our releases here <a href="https://github.com/Bracketeers/Launchpad/releases" target="_blank">https://github.com/Bracketeers/Launchpad/releases</a>
+### 2. CDN
+<code class="npm">https://unpkg.com/@bracketeers/launchpad/release/launchpad.min.css</code>
 
-### 3. CDN
-Coming soon
+### 3. Download
+Download the latest development release <a href="https://github.com/Bracketeers/Launchpad/releases" target="_blank">https://github.com/Bracketeers/Launchpad/releases</a>
+
+
+
 
 ## Customization
-Out of the box Launchpad will provide you with some default settings and colors. Understandably, you may need to change some of these values to fit your needs. Luckily all of this can be done by modifying the `variables.scss` file.
+Out of the box Launchpad will provide you with some default settings and colors. Understandably, you may need to change some of these values to fit your needs. Luckily all of this can be done by modifying the `_variables.scss` file.
 
-TODO
+Sound daunting? Don't worry, we've added handy comments across this file to help give you an idea of you are about to modify and what it will impact.
+
 

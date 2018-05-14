@@ -28,9 +28,9 @@ html {
 }
 
 a {
-  color: $standard;
+  color: #00e;
   transition: ease-in-out 0.15s all;
-  &:hover { color: darken($standard, 20%); }
+  &:hover { color: lighten(#00e, 20%); }
 }
 
 h1, h2, h3, h4, h5 {
