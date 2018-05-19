@@ -1,0 +1,11 @@
+.btn {
+  background-color: $standard;
+  border-radius: $radius;
+  color: $white;
+  margin: 0 5px;
+  padding: 0 20px;
+  &.btn--negative { background-color: $negative; }
+  &.btn--positive { background-color: $positive; }
+  &.btn--warning { background-color: $warning; }
+}
+
