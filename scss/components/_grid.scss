@@ -44,7 +44,7 @@ $breakpoints: (
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: $gutter;
+  margin: $gutter;
 }
 
 @mixin column-builder($breakpoint: '') {
@@ -59,6 +59,15 @@ $breakpoints: (
   .#{$breakpoint}two-fifths { flex: none; width: calc(40% - #{$gutter}* 2); }
   .#{$breakpoint}three-fifths { flex: none; width: calc(60% - #{$gutter}* 2); }
   .#{$breakpoint}four-fifths { flex: none; width: calc(80% - #{$gutter}* 2); }
+  .#{$breakpoint}one-tenth { flex: none; width: calc(10% - #{$gutter}* 2); }
+  .#{$breakpoint}two-tenths { flex: none; width: calc(20% - #{$gutter}* 2); }
+  .#{$breakpoint}three-tenths { flex: none; width: calc(30% - #{$gutter}* 2); }
+  .#{$breakpoint}four-tenths { flex: none; width: calc(40% - #{$gutter}* 2); }
+  .#{$breakpoint}five-tenths { flex: none; width: calc(50% - #{$gutter}* 2); }
+  .#{$breakpoint}six-tenths { flex: none; width: calc(60% - #{$gutter}* 2); }
+  .#{$breakpoint}seven-tenths { flex: none; width: calc(70% - #{$gutter}* 2); }
+  .#{$breakpoint}eight-tenths { flex: none; width: calc(80% - #{$gutter}* 2); }
+  .#{$breakpoint}nine-tenths { flex: none; width: calc(90% - #{$gutter}* 2); }
 }
 
 @include column-builder();

@@ -1,8 +1,12 @@
 /* ============ Classes ============ */
 
+
+// Floats
 .float--left { float: left; }
 .float--right { float: right; }
 
+
+// Text modifiers
 .text-weight--lighter { font-weight: 400; }
 .text-weight--bolder { font-weight: bolder; }
 
@@ -15,6 +19,16 @@
 .text-size--normal { font-size: 100%; }
 .text-size--large { font-size: 125%; }
 .text-size--larger { font-size: 150%; }
+
+
+// Flexbox
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 
 .align-items--center {
   -wekbit-align-items: center;
@@ -60,12 +74,19 @@
   justify-content: right;
 }
 
+
+// Lists
 .horizontal-list {
   padding-left: 0;
   li {
     display: inline-block;
     padding-right: $gutter;
   }
+}
+
+.no-bullets {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* ============ Includes ============ */
@@ -76,4 +97,20 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+}
+
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -ms-align-items: $align;
+  -moz-align-items: $align;
+  -o-align-items: $align;
+  align-items: $align;
+}
+
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -ms-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -o-justify-content: $justify;
+  justify-content: $justify;
 }

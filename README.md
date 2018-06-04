@@ -11,8 +11,8 @@ Our official documentation can be found at https://bracketeers.github.io/Launchp
 You can get started using Launchpad using a couple different ways.
 
 1. Download the files from our repository
-2. Use NPM (coming soon)
-3. Use the CDN (coming soon)
+2. Use NPM
+3. Use the CDN
 
 ### 1. Download
 You can find all of our releases here <https://github.com/Bracketeers/Launchpad/releases>
