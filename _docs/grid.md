@@ -63,36 +63,49 @@ You can modify a column with a responsive class adding one of the following clas
 * one-fifth (20% width)
 * two-fifths (40% width)
 * three-fifths (60% width)
-* four-fifths (80% width)
+* one-tenth (10% width)
+* two-tenths (20% width)
+* three-tenths (30% width)
+* four-tenths (40% width)
+* five-tenths (50% width)
+* six-tenths (60% width)
+* seven-tenths (70% width)
+* eight-tenths (80% width)
+* nine-tenths (90% width)
 
 Here is a small example of how you can use basic responsive classes
 
 <div class="example">
   <div class="row">
-    <div class="column one-whole"><p>one-whole</p></div>
+    <div class="column one-whole"><p>1/1</p></div>
   </div>
   <div class="row">
-    <div class="column one-half"><p>one-half</p></div>
+    <div class="column one-half"><p>1/2</p></div>
     <div class="column"><p>Auto</p></div>
     <div class="column"><p>Auto</p></div>
   </div>
   <div class="row">
-    <div class="column one-third"><p>one-third</p></div>
-    <div class="column two-thirds"><p>two-thirds</p></div>
+    <div class="column one-third"><p>1/3</p></div>
+    <div class="column two-thirds"><p>2/3</p></div>
   </div>
   <div class="row">
-    <div class="column one-quarter"><p>one-quarter</p></div>
-    <div class="column two-quarters"><p>two-quarters</p></div>
+    <div class="column one-quarter"><p>1/4</p></div>
+    <div class="column two-quarters"><p>2/4</p></div>
     <div class="column"><p>Auto</p></div>
   </div>
   <div class="row">
-    <div class="column three-quarters"><p>three-quarters</p></div>
+    <div class="column three-quarters"><p>3/4</p></div>
     <div class="column"><p>Auto</p></div>
     <div class="column"><p>Auto</p></div>
   </div>
   <div class="row">
-    <div class="column one-fifth"><p>one-fifth</p></div>
-    <div class="column four-fifths"><p>two-fifths</p></div>
+    <div class="column one-fifth"><p>1/5</p></div>
+    <div class="column four-fifths"><p>4/5</p></div>
+  </div>
+  <div class="row">
+    <div class="column one-tenth"><p>1/10</p></div>
+    <div class="column two-tenths"><p>2/10</p></div>
+    <div class="column seven-tenths"><p>7/10</p></div>
   </div>
 </div>
 
@@ -101,31 +114,35 @@ the code will look as such:
 ```html
 <div class="example">
   <div class="row">
-    <div class="column one-whole"><p>one-whole</p></div>
+    <div class="column one-whole"><p>1/1</p></div>
   </div>
   <div class="row">
-    <div class="column one-half"><p>one-half</p></div>
-    <div class="column"><p>Auto</p></div>
-    <div class="column"><p>Auto</p></div>
-  </div>
-  <div class="row">
-    <div class="column one-third"><p>one-third</p></div>
-    <div class="column two-thirds"><p>two-thirds</p></div>
-  </div>
-  <div class="row">
-    <div class="column one-quarter"><p>one-quarter</p></div>
-    <div class="column two-quarters"><p>two-quarters</p></div>
-    <div class="column"><p>Auto</p></div>
-  </div>
-  <div class="row">
-    <div class="column three-quarters"><p>three-quarters</p></div>
+    <div class="column one-half"><p>1/2</p></div>
     <div class="column"><p>Auto</p></div>
     <div class="column"><p>Auto</p></div>
   </div>
   <div class="row">
-    <div class="column one-fifth"><p>one-fifth</p></div>
-    <div class="column two-fifths"><p>two-fifths</p></div>
+    <div class="column one-third"><p>1/3</p></div>
+    <div class="column two-thirds"><p>2/3</p></div>
+  </div>
+  <div class="row">
+    <div class="column one-quarter"><p>1/4</p></div>
+    <div class="column two-quarters"><p>2/4</p></div>
     <div class="column"><p>Auto</p></div>
+  </div>
+  <div class="row">
+    <div class="column three-quarters"><p>3/4</p></div>
+    <div class="column"><p>Auto</p></div>
+    <div class="column"><p>Auto</p></div>
+  </div>
+  <div class="row">
+    <div class="column one-fifth"><p>1/5</p></div>
+    <div class="column four-fifths"><p>4/5</p></div>
+  </div>
+  <div class="row">
+    <div class="column one-tenth"><p>1/10</p></div>
+    <div class="column two-tenths"><p>2/10</p></div>
+    <div class="column seven-tenths"><p>7/10</p></div>
   </div>
 </div>
 ```

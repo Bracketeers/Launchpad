@@ -43,3 +43,4 @@ Out of the box Launchpad will provide you with some default settings and colors.
 Sound daunting? Don't worry, we've added handy comments across this file to help give you an idea of you are about to modify and what it will impact.
 
 
+<br>
