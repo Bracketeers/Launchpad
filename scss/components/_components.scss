@@ -21,7 +21,7 @@
   text-decoration: none;
   width: 100%;
   @include media-query($tablet-up) { width: auto; }
-  &:hover { opacity: 0.8; }
+  &:hover { color: $white; opacity: 0.8; }
   &.btn--negative { background-color: $negative; }
   &.btn--positive { background-color: $positive; }
   &.btn--warning { background-color: $warning; }
