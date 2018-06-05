@@ -1616,6 +1616,7 @@ template {
 
 .btn {
   background-color: #00b9f1;
+  border: 0;
   border-radius: 5px;
   color: #fff;
   display: inline-block;
