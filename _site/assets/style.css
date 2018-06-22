@@ -220,67 +220,27 @@ template { display: none; }
   .desktop--seven-tenths { flex: none; width: calc(70% - 0.5rem* 2); }
   .desktop--eight-tenths { flex: none; width: calc(80% - 0.5rem* 2); }
   .desktop--nine-tenths { flex: none; width: calc(90% - 0.5rem* 2); } }
+@media only screen and (max-width: 768px) { .tablet-down--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
+  .tablet-down--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
+  .tablet-down--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
+  .tablet-down--two-thirds { flex: none; width: calc(66.666% - 0.5rem* 2); }
+  .tablet-down--one-quarter { flex: none; width: calc(25% - 0.5rem* 2); }
+  .tablet-down--two-quarters { flex: none; width: calc(50% - 0.5rem* 2); }
+  .tablet-down--three-quarters { flex: none; width: calc(75% - 0.5rem* 2); }
+  .tablet-down--one-fifth { flex: none; width: calc(20% - 0.5rem* 2); }
+  .tablet-down--two-fifths { flex: none; width: calc(40% - 0.5rem* 2); }
+  .tablet-down--three-fifths { flex: none; width: calc(60% - 0.5rem* 2); }
+  .tablet-down--four-fifths { flex: none; width: calc(80% - 0.5rem* 2); }
+  .tablet-down--one-tenth { flex: none; width: calc(10% - 0.5rem* 2); }
+  .tablet-down--two-tenths { flex: none; width: calc(20% - 0.5rem* 2); }
+  .tablet-down--three-tenths { flex: none; width: calc(30% - 0.5rem* 2); }
+  .tablet-down--four-tenths { flex: none; width: calc(40% - 0.5rem* 2); }
+  .tablet-down--five-tenths { flex: none; width: calc(50% - 0.5rem* 2); }
+  .tablet-down--six-tenths { flex: none; width: calc(60% - 0.5rem* 2); }
+  .tablet-down--seven-tenths { flex: none; width: calc(70% - 0.5rem* 2); }
+  .tablet-down--eight-tenths { flex: none; width: calc(80% - 0.5rem* 2); }
+  .tablet-down--nine-tenths { flex: none; width: calc(90% - 0.5rem* 2); } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) { .tablet--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
-  .tablet--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
-  .tablet--two-thirds { flex: none; width: calc(66.666% - 0.5rem* 2); }
-  .tablet--one-quarter { flex: none; width: calc(25% - 0.5rem* 2); }
-  .tablet--two-quarters { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--three-quarters { flex: none; width: calc(75% - 0.5rem* 2); }
-  .tablet--one-fifth { flex: none; width: calc(20% - 0.5rem* 2); }
-  .tablet--two-fifths { flex: none; width: calc(40% - 0.5rem* 2); }
-  .tablet--three-fifths { flex: none; width: calc(60% - 0.5rem* 2); }
-  .tablet--four-fifths { flex: none; width: calc(80% - 0.5rem* 2); }
-  .tablet--one-tenth { flex: none; width: calc(10% - 0.5rem* 2); }
-  .tablet--two-tenths { flex: none; width: calc(20% - 0.5rem* 2); }
-  .tablet--three-tenths { flex: none; width: calc(30% - 0.5rem* 2); }
-  .tablet--four-tenths { flex: none; width: calc(40% - 0.5rem* 2); }
-  .tablet--five-tenths { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--six-tenths { flex: none; width: calc(60% - 0.5rem* 2); }
-  .tablet--seven-tenths { flex: none; width: calc(70% - 0.5rem* 2); }
-  .tablet--eight-tenths { flex: none; width: calc(80% - 0.5rem* 2); }
-  .tablet--nine-tenths { flex: none; width: calc(90% - 0.5rem* 2); } }
-@media only screen and (max-width: 768px) { .tablet--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
-  .tablet--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
-  .tablet--two-thirds { flex: none; width: calc(66.666% - 0.5rem* 2); }
-  .tablet--one-quarter { flex: none; width: calc(25% - 0.5rem* 2); }
-  .tablet--two-quarters { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--three-quarters { flex: none; width: calc(75% - 0.5rem* 2); }
-  .tablet--one-fifth { flex: none; width: calc(20% - 0.5rem* 2); }
-  .tablet--two-fifths { flex: none; width: calc(40% - 0.5rem* 2); }
-  .tablet--three-fifths { flex: none; width: calc(60% - 0.5rem* 2); }
-  .tablet--four-fifths { flex: none; width: calc(80% - 0.5rem* 2); }
-  .tablet--one-tenth { flex: none; width: calc(10% - 0.5rem* 2); }
-  .tablet--two-tenths { flex: none; width: calc(20% - 0.5rem* 2); }
-  .tablet--three-tenths { flex: none; width: calc(30% - 0.5rem* 2); }
-  .tablet--four-tenths { flex: none; width: calc(40% - 0.5rem* 2); }
-  .tablet--five-tenths { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--six-tenths { flex: none; width: calc(60% - 0.5rem* 2); }
-  .tablet--seven-tenths { flex: none; width: calc(70% - 0.5rem* 2); }
-  .tablet--eight-tenths { flex: none; width: calc(80% - 0.5rem* 2); }
-  .tablet--nine-tenths { flex: none; width: calc(90% - 0.5rem* 2); } }
-@media only screen and (min-width: 768px) and (max-width: 1024px) { .tablet--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
-  .tablet--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
-  .tablet--two-thirds { flex: none; width: calc(66.666% - 0.5rem* 2); }
-  .tablet--one-quarter { flex: none; width: calc(25% - 0.5rem* 2); }
-  .tablet--two-quarters { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--three-quarters { flex: none; width: calc(75% - 0.5rem* 2); }
-  .tablet--one-fifth { flex: none; width: calc(20% - 0.5rem* 2); }
-  .tablet--two-fifths { flex: none; width: calc(40% - 0.5rem* 2); }
-  .tablet--three-fifths { flex: none; width: calc(60% - 0.5rem* 2); }
-  .tablet--four-fifths { flex: none; width: calc(80% - 0.5rem* 2); }
-  .tablet--one-tenth { flex: none; width: calc(10% - 0.5rem* 2); }
-  .tablet--two-tenths { flex: none; width: calc(20% - 0.5rem* 2); }
-  .tablet--three-tenths { flex: none; width: calc(30% - 0.5rem* 2); }
-  .tablet--four-tenths { flex: none; width: calc(40% - 0.5rem* 2); }
-  .tablet--five-tenths { flex: none; width: calc(50% - 0.5rem* 2); }
-  .tablet--six-tenths { flex: none; width: calc(60% - 0.5rem* 2); }
-  .tablet--seven-tenths { flex: none; width: calc(70% - 0.5rem* 2); }
-  .tablet--eight-tenths { flex: none; width: calc(80% - 0.5rem* 2); }
-  .tablet--nine-tenths { flex: none; width: calc(90% - 0.5rem* 2); } }
-@media only screen and (max-width: 768px) { .tablet--one-whole { flex: none; width: calc(100% - 0.5rem* 2); }
   .tablet--one-half { flex: none; width: calc(50% - 0.5rem* 2); }
   .tablet--one-third { flex: none; width: calc(33.333% - 0.5rem* 2); }
   .tablet--two-thirds { flex: none; width: calc(66.666% - 0.5rem* 2); }

@@ -15,7 +15,7 @@ subtitle: Front end developer and avid <a href="/projects">creator of things</a>
 
 <div class="row">
   {% for doc in sorted %}
-    <div class="column desktop--one-half mobile--one-whole">
+    <div class="column desktop--one-half tablet--one-half mobile--one-whole">
       <div class="category column--{{ doc.title | slugify }} align-items--center">
         <div>
           <h2><a href="{{ doc.url | relative_url }}"><i class="icon-link"></i> {{ doc.title }}</a></h2>
