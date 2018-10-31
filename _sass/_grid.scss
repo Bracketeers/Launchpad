@@ -7,8 +7,8 @@ $grid-desktop: 1024px;
 
 
 $mobile: 'mobile';
-$mobile-down: 'small-down';
-$mobile-up: 'small-up';
+$mobile-down: 'mobile-down';
+$mobile-up: 'mobile-up';
 $tablet: 'tablet';
 $tablet-down: 'tablet-down';
 $tablet-up: 'desktop';
@@ -35,8 +35,6 @@ $breakpoints: (
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$gutter;
-  margin-right: -$gutter;
 }
 
 .column {
@@ -48,26 +46,26 @@ $breakpoints: (
 }
 
 @mixin column-builder($breakpoint: '') {
-  .#{$breakpoint}one-whole { flex: none; width: calc(100% - #{$gutter}* 2); }
-  .#{$breakpoint}one-half { flex: none; width: calc(50% - #{$gutter}* 2); }
-  .#{$breakpoint}one-third { flex: none; width: calc(33.333% - #{$gutter}* 2); }
-  .#{$breakpoint}two-thirds { flex: none; width: calc(66.666% - #{$gutter}* 2); }
-  .#{$breakpoint}one-quarter { flex: none; width: calc(25% - #{$gutter}* 2); }
-  .#{$breakpoint}two-quarters { flex: none; width: calc(50% - #{$gutter}* 2); }
-  .#{$breakpoint}three-quarters { flex: none; width: calc(75% - #{$gutter}* 2); }
-  .#{$breakpoint}one-fifth { flex: none; width: calc(20% - #{$gutter}* 2); }
-  .#{$breakpoint}two-fifths { flex: none; width: calc(40% - #{$gutter}* 2); }
-  .#{$breakpoint}three-fifths { flex: none; width: calc(60% - #{$gutter}* 2); }
-  .#{$breakpoint}four-fifths { flex: none; width: calc(80% - #{$gutter}* 2); }
-  .#{$breakpoint}one-tenth { flex: none; width: calc(10% - #{$gutter}* 2); }
-  .#{$breakpoint}two-tenths { flex: none; width: calc(20% - #{$gutter}* 2); }
-  .#{$breakpoint}three-tenths { flex: none; width: calc(30% - #{$gutter}* 2); }
-  .#{$breakpoint}four-tenths { flex: none; width: calc(40% - #{$gutter}* 2); }
-  .#{$breakpoint}five-tenths { flex: none; width: calc(50% - #{$gutter}* 2); }
-  .#{$breakpoint}six-tenths { flex: none; width: calc(60% - #{$gutter}* 2); }
-  .#{$breakpoint}seven-tenths { flex: none; width: calc(70% - #{$gutter}* 2); }
-  .#{$breakpoint}eight-tenths { flex: none; width: calc(80% - #{$gutter}* 2); }
-  .#{$breakpoint}nine-tenths { flex: none; width: calc(90% - #{$gutter}* 2); }
+  .#{$breakpoint}one-whole { flex: 0 1 calc(100% - #{$gutter}* 2); }
+  .#{$breakpoint}one-half { flex: 0 1 calc(50% - #{$gutter}* 2); }
+  .#{$breakpoint}one-third { flex: 0 1 calc(33.333% - #{$gutter}* 2); }
+  .#{$breakpoint}two-thirds { flex: 0 1 calc(66.666% - #{$gutter}* 2); }
+  .#{$breakpoint}one-quarter { flex: 0 1 calc(25% - #{$gutter}* 2); }
+  .#{$breakpoint}two-quarters { flex: 0 1 calc(50% - #{$gutter}* 2); }
+  .#{$breakpoint}three-quarters { flex: 0 1 calc(75% - #{$gutter}* 2); }
+  .#{$breakpoint}one-fifth { flex: 0 1 calc(20% - #{$gutter}* 2); }
+  .#{$breakpoint}two-fifths { flex: 0 1 calc(40% - #{$gutter}* 2); }
+  .#{$breakpoint}three-fifths { flex: 0 1 calc(60% - #{$gutter}* 2); }
+  .#{$breakpoint}four-fifths { flex: 0 1 calc(80% - #{$gutter}* 2); }
+  .#{$breakpoint}one-tenth { flex: 0 1 calc(10% - #{$gutter}* 2); }
+  .#{$breakpoint}two-tenths { flex: 0 1 calc(20% - #{$gutter}* 2); }
+  .#{$breakpoint}three-tenths { flex: 0 1 calc(30% - #{$gutter}* 2); }
+  .#{$breakpoint}four-tenths { flex: 0 1 calc(40% - #{$gutter}* 2); }
+  .#{$breakpoint}five-tenths { flex: 0 1 calc(50% - #{$gutter}* 2); }
+  .#{$breakpoint}six-tenths { flex: 0 1 calc(60% - #{$gutter}* 2); }
+  .#{$breakpoint}seven-tenths { flex: 0 1 calc(70% - #{$gutter}* 2); }
+  .#{$breakpoint}eight-tenths { flex: 0 1 calc(80% - #{$gutter}* 2); }
+  .#{$breakpoint}nine-tenths { flex: 0 1 calc(90% - #{$gutter}* 2); }
 }
 
 @include column-builder();
