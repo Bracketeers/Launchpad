@@ -36,6 +36,7 @@ a {
 h1, h2, h3, h4, h5 {
   color: #161d25;
   font-family: 'IBM Plex Sans',sans-serif;
+  margin: 15px 0;
 }
 
 h1 {
@@ -135,7 +136,10 @@ pre{
       font-size: 20px;
       a {
         color: #333;
+        font-family: 'IBM Plex Sans',sans-serif;
         text-decoration: none;
+        transition: ease-in-out 0.3s opacity;
+        &:hover { opacity: 0.6; }
       }
       i.menuToggle {
         cursor: pointer;
@@ -147,6 +151,7 @@ pre{
   ul.submenu {
     display: none;
     padding-top: 10px;
+    margin-top: 0;
     &.active { display: block; }
     padding-left: 20px;
     li {
@@ -162,6 +167,11 @@ pre{
 .example {
   max-width: 800px;
   width: 100%;
+  .row {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
   .column p {
     background-color: $standard;
     border-radius: 5px;
@@ -220,10 +230,11 @@ pre{
     margin: 10px 0;
   }
   span {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.08);
     border-radius: 5px;
+    display: inline-block;
     margin: 3px;
-    padding: 3px 6px;
+    padding: 0px 6px;
     white-space: nowrap;
   }
 }
