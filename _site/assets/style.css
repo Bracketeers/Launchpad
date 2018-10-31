@@ -25,7 +25,7 @@ ol, ul { margin: 1em 0; padding-left: 40px; }
 /* ============ Variables ============ */
 /* ============ Grid variables ============ */
 /* ============ Grid system ============ */
-.row { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; }
+.row { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; margin-left: -0.5rem; margin-right: -0.5rem; }
 
 .column { display: block; flex-basis: 0; flex-grow: 1; flex-shrink: 1; margin: 0.5rem; }
 
